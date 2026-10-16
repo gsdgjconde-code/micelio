@@ -1,0 +1,8 @@
+# Probado el diseño con estas versiones; si pip no encuentra alguna en tu Python,
+# usa Python 3.10-3.12 (brew install python@3.12) y vuelve a intentarlo.
+tensorflow==2.16.2
+tf-keras==2.16.0
+tensorflowjs==4.20.0
+pillow>=10.0
+# Aceleración por GPU en Apple Silicon (opcional, recomendable):
+# tensorflow-metal==1.1.0

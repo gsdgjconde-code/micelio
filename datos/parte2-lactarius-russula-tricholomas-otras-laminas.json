@@ -1,0 +1,1073 @@
+[
+  {
+    "id": "lactarius-deliciosus",
+    "cientifico": "Lactarius deliciosus",
+    "comunes": ["Níscalo", "Rovellón", "Robellón", "Esne-gorri", "Rebollón"],
+    "grupo": "Níscalos y lactarios",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "El níscalo. Naranja, zonado, con látex color zanahoria y manchas verdes al envejecer. Crece bajo pinos.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["naranja"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["naranja"], "tamano": ["mediano"],
+      "latex": ["naranja"], "viraje": ["verde"], "olor": ["nada", "fruta"],
+      "sustrato": ["suelo"], "arboles": ["pino"],
+      "esporada": "crema", "meses": [9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, naranja con zonas concéntricas más oscuras, deprimido en el centro, con manchas verdes al envejecer o rozarlo.",
+      "himenio": "Láminas decurrentes, naranjas, apretadas, que enverdecen al dañarse.",
+      "pie": "Corto, hueco, naranja con hoyuelos (escrobículos) más oscuros.",
+      "carne": "Quebradiza, blanquecina y naranja, suelta látex naranja zanahoria que no cambia de color (o enverdece muy lentamente).",
+      "habitat": "Pinares de todo tipo. Otoño, hasta las primeras heladas."
+    },
+    "confirmar": ["Látex NARANJA al cortar las láminas.", "Hoyuelos en el pie.", "Manchas verdes."],
+    "confusiones": [
+      { "id": "lactarius-torminosus", "como_distinguir": "Falso níscalo: látex blanco picante, margen peludo, crece bajo abedules." },
+      { "id": "lactarius-chrysorrheus", "como_distinguir": "Látex blanco que amarillea en segundos." },
+      { "id": "lactarius-zonarius", "como_distinguir": "Látex blanco acre; bajo robles y encinas." },
+      { "id": "paxillus-involutus", "como_distinguir": "Paxilo: sin látex, margen enrollado, láminas que se despegan." }
+    ],
+    "precauciones": "Regla: látex naranja o rojo vinoso = níscalo; látex blanco = déjalo. Revisa las larvas.",
+    "normativa": "Regulado en cotos micológicos de Castilla y León, Cataluña, Aragón y otras zonas: permiso y límite de kilos."
+  },
+  {
+    "id": "lactarius-sanguifluus",
+    "cientifico": "Lactarius sanguifluus",
+    "comunes": ["Níscalo de sangre vinosa", "Rovellón de sang", "Níscalo vinoso"],
+    "grupo": "Níscalos y lactarios",
+    "comestibilidad": "comestible",
+    "resumen": "Níscalo de látex rojo vino de los pinares mediterráneos. Excelente.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["rosa", "naranja", "lila"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["naranja", "rosa", "verde"], "tamano": ["mediano"],
+      "latex": ["rojo"], "viraje": ["verde"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino"],
+      "esporada": "crema", "meses": [9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "5-12 cm, naranja rosado a verdoso, zonado, deprimido.",
+      "himenio": "Láminas decurrentes de tono rosado vinoso.",
+      "pie": "Corto, con hoyuelos, a menudo con tonos violáceos.",
+      "carne": "Suelta látex rojo vino desde el principio.",
+      "habitat": "Pinares mediterráneos sobre suelos calcáreos. Otoño."
+    },
+    "confirmar": ["Látex rojo vinoso."],
+    "confusiones": [
+      { "id": "lactarius-torminosus", "como_distinguir": "Látex blanco, margen lanoso." }
+    ],
+    "precauciones": "Sin confusiones peligrosas si el látex es rojo."
+  },
+  {
+    "id": "lactarius-torminosus",
+    "cientifico": "Lactarius torminosus",
+    "comunes": ["Falso níscalo", "Níscalo de abedul", "Lactario lanoso"],
+    "grupo": "Níscalos y lactarios",
+    "comestibilidad": "toxica",
+    "popular": true,
+    "resumen": "Parecido al níscalo pero rosado, con el margen peludo y látex blanco muy picante. Bajo abedules. Intoxicación digestiva.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["rosa", "crema"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["rosa", "naranja"], "tamano": ["mediano"],
+      "latex": ["blanco"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["abedul"],
+      "esporada": "crema", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-12 cm, rosa salmón zonado, con el margen enrollado y muy lanoso o peludo.",
+      "himenio": "Láminas decurrentes, crema rosado.",
+      "pie": "Corto, rosado, sin hoyuelos marcados.",
+      "carne": "Blanca, látex blanco abundante y muy picante.",
+      "habitat": "Bajo abedules. Otoño."
+    },
+    "confirmar": ["Margen peludo.", "Látex blanco picante."],
+    "confusiones": [
+      { "id": "lactarius-deliciosus", "como_distinguir": "Níscalo: látex naranja, pie con hoyuelos, bajo pinos." }
+    ],
+    "precauciones": "Gastroenteritis intensa."
+  },
+  {
+    "id": "lactarius-chrysorrheus",
+    "cientifico": "Lactarius chrysorrheus",
+    "comunes": ["Lactario de leche amarilla", "Falso níscalo de encina"],
+    "grupo": "Níscalos y lactarios",
+    "comestibilidad": "toxica",
+    "resumen": "Lactario ocre rosado cuyo látex blanco vira a amarillo azufre en segundos. Picante, indigesto.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["crema", "rosa"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["naranja", "rosa", "crema"], "tamano": ["mediano"],
+      "latex": ["blanco", "amarillo"], "viraje": ["amarillo"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["roble", "encina", "castano"],
+      "esporada": "crema", "meses": [9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "4-10 cm, ocre rosado con zonas tenues, deprimido.",
+      "himenio": "Láminas decurrentes, crema rosado.",
+      "pie": "Blanquecino, sin hoyuelos.",
+      "carne": "Blanca, látex blanco que se vuelve amarillo intenso al contacto con el aire. Picante.",
+      "habitat": "Robledales, encinares y castañares. Otoño."
+    },
+    "confirmar": ["Deja caer una gota de látex en un papel: amarillea en segundos."],
+    "confusiones": [
+      { "id": "lactarius-deliciosus", "como_distinguir": "Níscalo: látex naranja." }
+    ],
+    "precauciones": "Trastornos digestivos."
+  },
+  {
+    "id": "lactarius-zonarius",
+    "cientifico": "Lactarius zonarius",
+    "comunes": ["Lactario zonado", "Falso níscalo de roble"],
+    "grupo": "Níscalos y lactarios",
+    "comestibilidad": "toxica",
+    "resumen": "Lactario naranja ocre zonado, de látex blanco acre, bajo robles y encinas. Se confunde con el níscalo.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["crema"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["naranja", "crema"], "tamano": ["mediano"],
+      "latex": ["blanco"], "viraje": ["no"], "olor": ["nada", "fruta"],
+      "sustrato": ["suelo"], "arboles": ["roble", "encina"],
+      "esporada": "crema", "meses": [9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-12 cm, naranja ocre zonado, margen enrollado pero no lanoso.",
+      "himenio": "Láminas decurrentes, crema.",
+      "pie": "Corto, blanquecino, a veces con hoyuelos.",
+      "carne": "Blanca, látex blanco acre.",
+      "habitat": "Robledales y encinares. Otoño."
+    },
+    "confirmar": ["Látex blanco (el níscalo lo tiene naranja)."],
+    "confusiones": [
+      { "id": "lactarius-deliciosus", "como_distinguir": "Níscalo: látex naranja, pinares." }
+    ],
+    "precauciones": "Gastroenteritis."
+  },
+  {
+    "id": "lactarius-vellereus",
+    "cientifico": "Lactarius vellereus",
+    "comunes": ["Lactario aterciopelado", "Pebrazo"],
+    "grupo": "Níscalos y lactarios",
+    "comestibilidad": "no_comestible",
+    "resumen": "Lactario blanco grande y aterciopelado con láminas espaciadas y látex escaso y acre.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["blanco"], "tamano": ["grande"],
+      "latex": ["blanco"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["haya", "roble", "castano", "encina"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "10-30 cm, blanco, aterciopelado, en embudo.",
+      "himenio": "Láminas decurrentes, blancas a crema, espaciadas.",
+      "pie": "Corto, grueso, blanco, aterciopelado.",
+      "carne": "Blanca, dura, látex blanco escaso y acre.",
+      "habitat": "Frondosas. Verano y otoño."
+    },
+    "confirmar": ["Sombrero aterciopelado.", "Láminas espaciadas."],
+    "confusiones": [
+      { "id": "lactarius-piperatus", "como_distinguir": "Piperatus: láminas muy apretadas, látex abundante." }
+    ],
+    "precauciones": "Acre e indigesto."
+  },
+  {
+    "id": "lactarius-piperatus",
+    "cientifico": "Lactarius piperatus",
+    "comunes": ["Lactario picante", "Pebrazo", "Lleterola"],
+    "grupo": "Níscalos y lactarios",
+    "comestibilidad": "no_comestible",
+    "resumen": "Lactario blanco con láminas muy apretadas y látex blanco abundante muy picante.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["blanco", "crema"], "tamano": ["mediano", "grande"],
+      "latex": ["blanco"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["haya", "roble", "castano", "encina"],
+      "esporada": "blanca", "meses": [7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "6-15 cm, blanco, liso, en embudo.",
+      "himenio": "Láminas decurrentes, blancas a crema, muy apretadas.",
+      "pie": "Blanco, liso.",
+      "carne": "Blanca, látex blanco abundante y muy picante.",
+      "habitat": "Frondosas. Verano y otoño."
+    },
+    "confirmar": ["Láminas muy densas.", "Látex muy picante."],
+    "confusiones": [],
+    "precauciones": "Picante e indigesto; en algunos lugares se consume seco como condimento, no recomendable."
+  },
+  {
+    "id": "russula-cyanoxantha",
+    "cientifico": "Russula cyanoxantha",
+    "comunes": ["Carbonera", "Rúsula de láminas flexibles", "Gibelurdin"],
+    "grupo": "Rúsulas",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Rúsula de sombrero violáceo verdoso variable con láminas flexibles que no se rompen al presionarlas. Muy buen comestible.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["violeta", "verde", "gris"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["haya", "roble", "castano", "pino", "abeto", "encina"],
+      "esporada": "blanca", "meses": [6, 7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, de color muy variable: violeta, azulado, verdoso, con mezcla de tonos.",
+      "himenio": "Láminas blancas, flexibles y grasas al tacto, que no se rompen al pasar el dedo (rasgo único entre las rúsulas).",
+      "pie": "Blanco, firme.",
+      "carne": "Blanca, granulosa, sabor suave.",
+      "habitat": "Frondosas y coníferas. Verano y otoño."
+    },
+    "confirmar": ["Láminas que se doblan sin romperse.", "Sin anillo ni volva.", "Sabor suave, no picante."],
+    "confusiones": [
+      { "id": "amanita-phalloides", "como_distinguir": "Oronja verde: anillo, volva en saco, carne fibrosa (no granulosa)." }
+    ],
+    "precauciones": "Comprueba siempre que no hay anillo ni volva antes de dar por rúsula una seta verdosa."
+  },
+  {
+    "id": "russula-virescens",
+    "cientifico": "Russula virescens",
+    "comunes": ["Gorro verde", "Rúsula verde agrietada", "Seta de cura"],
+    "grupo": "Rúsulas",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Rúsula verde con la cutícula agrietada en placas. Excelente comestible, pero se confunde con la oronja verde.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["verde"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["haya", "roble", "castano", "encina"],
+      "esporada": "blanca", "meses": [6, 7, 8, 9, 10]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, verde (a veces grisáceo), con la cutícula cuarteada en pequeñas placas.",
+      "himenio": "Láminas blancas a crema, quebradizas.",
+      "pie": "Blanco, firme.",
+      "carne": "Blanca, granulosa, sabor suave a avellana.",
+      "habitat": "Hayedos, robledales, castañares. Verano y principio de otoño."
+    },
+    "confirmar": ["Cutícula agrietada en placas.", "Sin anillo ni volva.", "Carne que se rompe como tiza."],
+    "confusiones": [
+      { "id": "amanita-phalloides", "como_distinguir": "Oronja verde: anillo, volva, sombrero liso con fibrillas, carne fibrosa." }
+    ],
+    "precauciones": "Desentierra siempre la base: ninguna rúsula tiene volva."
+  },
+  {
+    "id": "russula-vesca",
+    "cientifico": "Russula vesca",
+    "comunes": ["Rúsula comestible", "Rúsula de cutícula corta"],
+    "grupo": "Rúsulas",
+    "comestibilidad": "comestible",
+    "resumen": "Rúsula rosa pardo cuya cutícula no llega al borde, dejando ver las láminas. Sabor suave a avellana.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["rosa", "marron"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["haya", "roble", "castano", "pino"],
+      "esporada": "blanca", "meses": [6, 7, 8, 9, 10]
+    },
+    "descripcion": {
+      "sombrero": "5-10 cm, rosa carne a marrón rosado, con la cutícula que se queda corta en el margen.",
+      "himenio": "Láminas blancas a crema.",
+      "pie": "Blanco.",
+      "carne": "Blanca, sabor suave.",
+      "habitat": "Frondosas y coníferas. Verano y otoño."
+    },
+    "confirmar": ["Borde del sombrero con las láminas al descubierto.", "Sabor suave."],
+    "confusiones": [
+      { "id": "russula-emetica", "como_distinguir": "Emética: rojo vivo y muy picante." }
+    ],
+    "precauciones": "Prueba un trocito: las rúsulas picantes no se comen."
+  },
+  {
+    "id": "russula-emetica",
+    "cientifico": "Russula emetica",
+    "comunes": ["Rúsula emética", "Rúsula vomitiva"],
+    "grupo": "Rúsulas",
+    "comestibilidad": "toxica",
+    "resumen": "Rúsula de sombrero rojo vivo y carne muy picante. Provoca vómitos.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["rojo"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "fruta"],
+      "sustrato": ["suelo"], "arboles": ["pino", "abeto", "abedul"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "3-10 cm, rojo vivo, brillante, cutícula que se pela con facilidad.",
+      "himenio": "Láminas blancas.",
+      "pie": "Blanco, frágil.",
+      "carne": "Blanca, muy picante.",
+      "habitat": "Coníferas en zonas húmedas con musgo. Otoño."
+    },
+    "confirmar": ["Picor intenso al probar un trocito."],
+    "confusiones": [
+      { "id": "russula-vesca", "como_distinguir": "Vesca: suave, rosa pardo." }
+    ],
+    "precauciones": "Regla general: cualquier rúsula picante se descarta."
+  },
+  {
+    "id": "tricholoma-terreum",
+    "cientifico": "Tricholoma terreum",
+    "comunes": ["Negrilla", "Fredolic", "Ratón", "Carbonera de pino"],
+    "grupo": "Tricholomas",
+    "comestibilidad": "comestible_con_precaucion",
+    "popular": true,
+    "resumen": "Seta gris afelpada de pinares, muy recolectada. Comestible, pero se han descrito casos de daño muscular con consumos grandes y repetidos: con moderación.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "gris"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["gris"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino"],
+      "esporada": "blanca", "meses": [10, 11, 12, 1]
+    },
+    "descripcion": {
+      "sombrero": "3-8 cm, gris, afelpado o fibriloso, con mamelón.",
+      "himenio": "Láminas blancas a grisáceas, escotadas.",
+      "pie": "Blanco, frágil, sin anillo.",
+      "carne": "Blanca, frágil, sin olor ni sabor destacables.",
+      "habitat": "Pinares, sobre todo de suelos calcáreos. Otoño tardío e invierno."
+    },
+    "confirmar": ["Sombrero afelpado gris sin escamas marcadas.", "Sin olor a harina.", "Pequeña y frágil."],
+    "confusiones": [
+      { "id": "tricholoma-pardinum", "como_distinguir": "Tigrado (tóxico): mucho más grande y carnoso, escamas gris marrón, olor a harina, hayedos de montaña." },
+      { "id": "entoloma-sinuatum", "como_distinguir": "Entoloma: láminas rosas en la madurez, olor a harina." }
+    ],
+    "precauciones": "Comer con moderación y no en días seguidos (rabdomiolisis descrita con grandes cantidades)."
+  },
+  {
+    "id": "tricholoma-portentosum",
+    "cientifico": "Tricholoma portentosum",
+    "comunes": ["Capuchina", "Tricoloma portentoso", "Carbonera", "Ziza urdin"],
+    "grupo": "Tricholomas",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Tricholoma gris con fibrillas negruzcas y tonos amarillos en láminas y pie. Buen comestible de pinares tardío.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "amarillo"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["gris", "negro"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["harina"],
+      "sustrato": ["suelo"], "arboles": ["pino", "abeto"],
+      "esporada": "blanca", "meses": [10, 11, 12, 1]
+    },
+    "descripcion": {
+      "sombrero": "5-12 cm, gris con fibrillas radiales negruzcas, algo viscoso, con reflejos amarillentos.",
+      "himenio": "Láminas blancas con tintes amarillos.",
+      "pie": "Blanco con tonos amarillo verdosos.",
+      "carne": "Blanca, olor y sabor a harina.",
+      "habitat": "Pinares arenosos y abetales. Final de otoño e invierno."
+    },
+    "confirmar": ["Reflejos amarillos en láminas y pie.", "Olor a harina.", "Sin anillo ni volva."],
+    "confusiones": [
+      { "id": "tricholoma-pardinum", "como_distinguir": "Tigrado: escamas grandes, sin amarillo, hayedos." },
+      { "id": "amanita-phalloides", "como_distinguir": "Oronja verde: anillo y volva." }
+    ],
+    "precauciones": "Sin confusiones peligrosas si se verifica la ausencia de anillo y volva."
+  },
+  {
+    "id": "tricholoma-equestre",
+    "cientifico": "Tricholoma equestre",
+    "comunes": ["Seta de los caballeros", "Yema de huevo", "Tricoloma ecuestre"],
+    "grupo": "Tricholomas",
+    "comestibilidad": "toxica",
+    "resumen": "Tricholoma amarillo de pinares arenosos. Antes muy apreciado; se han registrado intoxicaciones graves (daño muscular) tras comidas repetidas.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["amarillo"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["amarillo", "verde", "marron"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["harina", "nada"],
+      "sustrato": ["suelo"], "arboles": ["pino"],
+      "esporada": "blanca", "meses": [10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "5-12 cm, amarillo verdoso con el centro pardo, viscoso.",
+      "himenio": "Láminas amarillo vivo.",
+      "pie": "Amarillo.",
+      "carne": "Blanca amarillenta, olor suave a harina.",
+      "habitat": "Pinares sobre arena. Otoño."
+    },
+    "confirmar": ["Toda amarilla, láminas amarillas, sin anillo."],
+    "confusiones": [
+      { "id": "tricholoma-portentosum", "como_distinguir": "Capuchina: sombrero gris." }
+    ],
+    "precauciones": "Rabdomiolisis (destrucción muscular) tras consumos repetidos; casos mortales en Francia. No consumir."
+  },
+  {
+    "id": "tricholoma-pardinum",
+    "cientifico": "Tricholoma pardinum",
+    "comunes": ["Tricoloma tigrado", "Seta tigre", "Ratón tigrado"],
+    "grupo": "Tricholomas",
+    "comestibilidad": "toxica",
+    "popular": true,
+    "resumen": "Tricholoma grande y carnoso con escamas gris marrón, de hayedos y abetales calcáreos. Intoxicación digestiva muy fuerte.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["gris", "marron"], "tamano": ["grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["harina"],
+      "sustrato": ["suelo"], "arboles": ["haya", "abeto", "pino"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "8-20 cm, blanquecino a gris con escamas gris marrón dispuestas radialmente (efecto tigrado).",
+      "himenio": "Láminas blancas a crema, a veces con reflejos verdosos, gruesas.",
+      "pie": "Robusto, blanquecino.",
+      "carne": "Blanca, compacta, olor a harina.",
+      "habitat": "Hayedos y abetales de montaña sobre caliza. Verano y otoño."
+    },
+    "confirmar": ["Tamaño grande y carnoso con escamas.", "Olor a harina."],
+    "confusiones": [
+      { "id": "tricholoma-terreum", "como_distinguir": "Negrilla: pequeña, frágil, afelpada, sin olor." },
+      { "id": "tricholoma-portentosum", "como_distinguir": "Capuchina: fibrillas, no escamas; tonos amarillos." }
+    ],
+    "precauciones": "Vómitos y diarrea violentos a las 1-3 h. Desconfía de tricolomas grises grandes."
+  },
+  {
+    "id": "calocybe-gambosa",
+    "cientifico": "Calocybe gambosa",
+    "comunes": ["Perretxiko", "Seta de San Jorge", "Mojardón", "Moixernó", "Usón"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "La seta de primavera. Blanca crema, carnosa, con olor intenso a harina. Excelente, pero con imitadores tóxicos.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["blanco", "crema"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["harina"],
+      "sustrato": ["prado", "suelo"], "arboles": ["ninguno", "cualquiera"],
+      "esporada": "blanca", "meses": [4, 5, 6]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, blanco a crema (a veces ocre), carnoso, margen enrollado de joven.",
+      "himenio": "Láminas blancas a crema, muy apretadas, escotadas.",
+      "pie": "Robusto, blanco, sin anillo.",
+      "carne": "Blanca, compacta, olor fuerte a harina fresca.",
+      "habitat": "Prados de montaña, setos y bordes de bosque, en corros. Abril a junio."
+    },
+    "confirmar": ["Olor a harina muy claro.", "Láminas blancas MUY apretadas, nunca rosas.", "Primavera.", "Sin anillo ni volva."],
+    "confusiones": [
+      { "id": "entoloma-sinuatum", "como_distinguir": "Entoloma (tóxico): láminas que se vuelven rosas, también huele a harina." },
+      { "id": "inocybe-erubescens", "como_distinguir": "Inocybe (muy tóxico): sombrero cónico fibriloso que enrojece, láminas marrones." },
+      { "id": "clitocybe-rivulosa", "como_distinguir": "Clitocibe blanco (muy tóxico): más pequeño, láminas decurrentes, sin olor a harina." },
+      { "id": "amanita-verna", "como_distinguir": "Amanita de primavera: anillo y volva, láminas libres." }
+    ],
+    "precauciones": "Desecha cualquier ejemplar con láminas rosadas o que enrojezca."
+  },
+  {
+    "id": "entoloma-sinuatum",
+    "cientifico": "Entoloma sinuatum",
+    "comunes": ["Entoloma lívido", "Pérfida", "Seta engañosa"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "toxica",
+    "popular": true,
+    "resumen": "Seta grande gris crema con olor a harina y láminas que se vuelven rosas. Una de las intoxicaciones digestivas más frecuentes y graves.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["amarillo", "rosa", "crema"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["gris", "crema", "blanco"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["harina"],
+      "sustrato": ["suelo"], "arboles": ["roble", "haya", "encina", "castano"],
+      "esporada": "rosa", "meses": [4, 5, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "6-20 cm, gris blanquecino a crema, sedoso, margen enrollado.",
+      "himenio": "Láminas amarillentas de joven, rosa salmón en la madurez, escotadas. Esporada rosa.",
+      "pie": "Blanco, robusto, sin anillo.",
+      "carne": "Blanca, olor a harina.",
+      "habitat": "Frondosas de suelos calcáreos, en corros. Otoño, también primavera."
+    },
+    "confirmar": ["Láminas con tono rosado o esporada rosa.", "Olor a harina."],
+    "confusiones": [
+      { "id": "calocybe-gambosa", "como_distinguir": "Perretxiko: láminas siempre blancas y muy apretadas; primavera." },
+      { "id": "clitocybe-nebularis", "como_distinguir": "Pardilla: láminas decurrentes crema, olor dulzón no harinoso." },
+      { "id": "clitopilus-prunulus", "como_distinguir": "Molinera: más pequeña, láminas decurrentes." }
+    ],
+    "precauciones": "Gastroenteritis violenta a las 1-3 h, que puede requerir hospitalización."
+  },
+  {
+    "id": "inocybe-erubescens",
+    "cientifico": "Inocybe erubescens",
+    "comunes": ["Inocibe de Patouillard", "Inocibe rojizo"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "mortal",
+    "resumen": "Seta cónica blanquecina de primavera que enrojece. Contiene muscarina en dosis peligrosas; ha causado muertes.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "marron", "crema"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["blanco", "crema", "rojo"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["rojo"], "olor": ["fruta", "dulzon"],
+      "sustrato": ["suelo", "prado"], "arboles": ["haya", "roble", "cualquiera"],
+      "esporada": "marron", "meses": [5, 6, 7]
+    },
+    "descripcion": {
+      "sombrero": "3-8 cm, cónico acampanado, blanquecino a crema, fibriloso, que se raja radialmente y enrojece con la edad o al manipularlo.",
+      "himenio": "Láminas blanquecinas que pasan a marrón oliva. Esporada marrón.",
+      "pie": "Blanco, fibroso, que enrojece.",
+      "carne": "Blanca, enrojece, olor afrutado dulzón.",
+      "habitat": "Parques, frondosas sobre caliza. Mayo a julio."
+    },
+    "confirmar": ["Sombrero puntiagudo y fibriloso.", "Manchas rojas al manipularla.", "Láminas que oscurecen a marrón."],
+    "confusiones": [
+      { "id": "calocybe-gambosa", "como_distinguir": "Perretxiko: sombrero redondeado no fibriloso, láminas blancas, no enrojece." },
+      { "id": "agaricus-campestris", "como_distinguir": "Champiñón: anillo, láminas rosas." }
+    ],
+    "precauciones": "Síndrome muscarínico a los 15 min-2 h: sudoración, salivación, bradicardia. Puede ser mortal sin atropina."
+  },
+  {
+    "id": "clitocybe-nebularis",
+    "cientifico": "Clitocybe nebularis",
+    "comunes": ["Pardilla", "Ilarraca", "Seta de niebla", "Clitocibe nebuloso"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "comestible_con_precaucion",
+    "popular": true,
+    "resumen": "Seta gris pardo grande de otoño tardío con olor fuerte. Muy consumida, pero sienta mal a bastantes personas.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["crema", "blanco"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["gris", "marron"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["dulzon", "desagradable"],
+      "sustrato": ["suelo"], "arboles": ["cualquiera", "pino", "roble", "haya"],
+      "esporada": "crema", "meses": [10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "6-20 cm, gris pardo, con una pruina blanquecina, carnoso.",
+      "himenio": "Láminas decurrentes, crema, apretadas, que se separan fácilmente de la carne.",
+      "pie": "Grueso, engrosado en la base, blanquecino.",
+      "carne": "Blanca, olor intenso dulzón a rancio.",
+      "habitat": "Bosques de todo tipo, en corros entre la hojarasca. Final de otoño."
+    },
+    "confirmar": ["Olor fuerte característico.", "Láminas decurrentes crema, no rosas."],
+    "confusiones": [
+      { "id": "entoloma-sinuatum", "como_distinguir": "Entoloma: láminas rosadas, olor a harina, no decurrentes." }
+    ],
+    "precauciones": "Hervir y desechar el agua. Intolerancias frecuentes: prueba poca cantidad. Algunas guías la consideran no comestible."
+  },
+  {
+    "id": "clitocybe-rivulosa",
+    "cientifico": "Clitocybe rivulosa",
+    "comunes": ["Clitocibe blanco", "Clitocibe de los prados", "Clitocybe dealbata"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "mortal",
+    "popular": true,
+    "resumen": "Pequeña seta blanca de céspedes y prados, en corros. Muscarina: grave, potencialmente mortal. Se confunde con la senderuela.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["blanco", "crema"], "tamano": ["pequeno"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "harina"],
+      "sustrato": ["prado"], "arboles": ["ninguno"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "2-5 cm, blanco a crema rosado, con pruina que se cuartea en círculos, deprimido en el centro.",
+      "himenio": "Láminas decurrentes, blancas a crema, apretadas.",
+      "pie": "Blanco, fino, sin anillo.",
+      "carne": "Blanca, olor débil.",
+      "habitat": "Céspedes, prados y jardines, en corros. Final de verano y otoño."
+    },
+    "confirmar": ["Láminas decurrentes y apretadas (la senderuela las tiene separadas y no decurrentes).", "Pequeña y blanca en hierba."],
+    "confusiones": [
+      { "id": "marasmius-oreades", "como_distinguir": "Senderuela: láminas espaciadas no decurrentes, pie elástico, sombrero ocre con mamelón." },
+      { "id": "clitopilus-prunulus", "como_distinguir": "Molinera: olor fuerte a harina, láminas que se vuelven rosas." },
+      { "id": "calocybe-gambosa", "como_distinguir": "Perretxiko: más grande y carnoso, olor a harina." }
+    ],
+    "precauciones": "Síndrome muscarínico a los 15 min-2 h. Nunca comas setas blancas pequeñas de césped."
+  },
+  {
+    "id": "clitopilus-prunulus",
+    "cientifico": "Clitopilus prunulus",
+    "comunes": ["Molinera", "Harinera", "Seta de harina"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "comestible",
+    "resumen": "Seta blanca mate con olor intenso a harina y láminas decurrentes que se vuelven rosas. Buena, pero peligrosa de confundir con clitocibes blancos.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "rosa"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["blanco", "gris", "crema"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["harina"],
+      "sustrato": ["suelo"], "arboles": ["cualquiera"],
+      "esporada": "rosa", "meses": [7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "3-10 cm, blanco a gris claro, mate, con tacto de gamuza, margen enrollado.",
+      "himenio": "Láminas decurrentes, blancas, después rosas. Esporada rosa.",
+      "pie": "Corto, blanco, a menudo excéntrico.",
+      "carne": "Blanca, olor muy fuerte a harina.",
+      "habitat": "Bosques de frondosas y coníferas, a menudo cerca de boletos. Verano y otoño."
+    },
+    "confirmar": ["Olor fuerte a harina.", "Láminas rosadas en la madurez."],
+    "confusiones": [
+      { "id": "clitocybe-rivulosa", "como_distinguir": "Clitocibe blanco (mortal): sin olor a harina, láminas nunca rosas, en césped." },
+      { "id": "entoloma-sinuatum", "como_distinguir": "Entoloma: láminas escotadas, no decurrentes, mucho más grande." }
+    ],
+    "precauciones": "Solo para quien domine la diferencia con los clitocibes blancos."
+  },
+  {
+    "id": "lepista-nuda",
+    "cientifico": "Lepista nuda",
+    "comunes": ["Pie azul", "Nazarena", "Peu blau", "Seta de pie violeta"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Seta entera de color lila violáceo con olor perfumado. Buen comestible, siempre cocinada.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["lila", "marron"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["violeta", "marron"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["fruta", "dulzon"],
+      "sustrato": ["suelo"], "arboles": ["cualquiera"],
+      "esporada": "rosa", "meses": [10, 11, 12, 1]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, violeta lila que pardea con la edad, liso.",
+      "himenio": "Láminas lila, apretadas, escotadas, que se vuelven pardas. Esporada rosa pálido.",
+      "pie": "Lila, fibriloso, engrosado en la base. Sin anillo ni cortina.",
+      "carne": "Lila a blanquecina, olor aromático perfumado.",
+      "habitat": "Hojarasca de bosques y jardines, compost. Final de otoño e invierno."
+    },
+    "confirmar": ["Sin cortina ni restos de telaraña en el pie.", "Esporada rosada, no marrón óxido.", "Olor perfumado."],
+    "confusiones": [
+      { "id": "cortinarius-orellanus", "como_distinguir": "Los cortinarios violetas tienen cortina (telaraña) y esporada marrón óxido. Ningún cortinario es seguro." }
+    ],
+    "precauciones": "Cruda es indigesta: siempre cocinada."
+  },
+  {
+    "id": "marasmius-oreades",
+    "cientifico": "Marasmius oreades",
+    "comunes": ["Senderuela", "Carrerilla", "Ninfa", "Cama-sec"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Setita ocre de prados en corros de brujas, con pie elástico y láminas separadas. Muy buena, pero crece junto a clitocibes blancos mortales.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["libres", "adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["crema", "marron"], "tamano": ["pequeno"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "otro"],
+      "sustrato": ["prado"], "arboles": ["ninguno"],
+      "esporada": "blanca", "meses": [4, 5, 6, 7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "2-5 cm, ocre crema con mamelón, más oscuro en húmedo, margen a menudo estriado.",
+      "himenio": "Láminas blancas a crema, SEPARADAS entre sí, libres o apenas unidas al pie.",
+      "pie": "Fino, duro y elástico: se puede retorcer sin romperse.",
+      "carne": "Fina, olor agradable (a almendra amarga). Se seca y revive con la lluvia.",
+      "habitat": "Prados y céspedes, en corros de brujas. Primavera a otoño."
+    },
+    "confirmar": ["Láminas espaciadas y no decurrentes.", "Pie elástico que no se parte.", "Mamelón central."],
+    "confusiones": [
+      { "id": "clitocybe-rivulosa", "como_distinguir": "Clitocibe blanco (mortal): láminas decurrentes apretadas, pie frágil, sombrero blanco sin mamelón. Crece en los mismos corros." }
+    ],
+    "precauciones": "Revisa una a una: en el mismo corro puede haber clitocibes blancos."
+  },
+  {
+    "id": "hygrophorus-marzuolus",
+    "cientifico": "Hygrophorus marzuolus",
+    "comunes": ["Seta de marzo", "Marzuelo", "Higróforo de marzo"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "comestible",
+    "resumen": "Seta gris negruzca de láminas gruesas y céreas que sale al derretirse la nieve en montaña. Muy apreciada.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "gris"], "insercion": ["decurrentes", "adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["gris", "negro", "blanco"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["abeto", "pino", "haya"],
+      "esporada": "blanca", "meses": [2, 3, 4, 5]
+    },
+    "descripcion": {
+      "sombrero": "4-10 cm, blanco grisáceo a gris negro, carnoso, a menudo enterrado bajo la hojarasca.",
+      "himenio": "Láminas gruesas, espaciadas, céreas, blancas a grises, algo decurrentes.",
+      "pie": "Robusto, blanco grisáceo.",
+      "carne": "Blanca, compacta, sin olor.",
+      "habitat": "Abetales, pinares y hayedos de montaña. Febrero a mayo, junto a la nieve."
+    },
+    "confirmar": ["Láminas gruesas y céreas.", "Época invernal-primaveral."],
+    "confusiones": [],
+    "precauciones": "Sin confusiones peligrosas."
+  },
+  {
+    "id": "pleurotus-ostreatus",
+    "cientifico": "Pleurotus ostreatus",
+    "comunes": ["Seta de ostra", "Gírgola", "Orellana", "Seta de chopo"],
+    "grupo": "Setas de madera",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Setas en forma de concha, en repisas sobre troncos de frondosas. Buen comestible.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["gris", "marron", "violeta"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "fruta"],
+      "sustrato": ["madera"], "arboles": ["chopo", "haya", "roble", "cualquiera"],
+      "esporada": "blanca", "meses": [10, 11, 12, 1, 2, 3]
+    },
+    "descripcion": {
+      "sombrero": "5-20 cm, en forma de ostra o concha, gris a marrón con tonos azulados.",
+      "himenio": "Láminas decurrentes, blancas a crema.",
+      "pie": "Lateral, corto o ausente.",
+      "carne": "Blanca, elástica, olor agradable.",
+      "habitat": "En repisas superpuestas sobre troncos y tocones de frondosas (chopos, hayas, sauces). Otoño e invierno."
+    },
+    "confirmar": ["Crece en repisas sobre madera.", "Láminas blancas decurrentes.", "Esporada blanca."],
+    "confusiones": [
+      { "id": "omphalotus-olearius", "como_distinguir": "Seta de olivo: naranja intensa, en haces en la base de olivos y encinas." }
+    ],
+    "precauciones": "Sin confusiones peligrosas."
+  },
+  {
+    "id": "pleurotus-eryngii",
+    "cientifico": "Pleurotus eryngii",
+    "comunes": ["Seta de cardo", "Gírgola de panical", "Seta de cardo corredor"],
+    "grupo": "Setas de madera",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Crece sobre las raíces del cardo corredor en eriales y prados secos. Excelente.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron", "crema", "gris"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["prado", "suelo"], "arboles": ["ninguno"],
+      "esporada": "blanca", "meses": [3, 4, 5, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "4-12 cm, marrón crema a gris, aplanado o deprimido, margen enrollado.",
+      "himenio": "Láminas decurrentes, blanquecinas.",
+      "pie": "Central o excéntrico, robusto, blanco.",
+      "carne": "Blanca, firme.",
+      "habitat": "Sobre raíces de cardo corredor (Eryngium campestre) en prados secos, eriales y bordes de caminos. Primavera y otoño."
+    },
+    "confirmar": ["Cardo corredor seco junto a la seta.", "Láminas decurrentes blancas."],
+    "confusiones": [],
+    "precauciones": "Sin confusiones peligrosas."
+  },
+  {
+    "id": "agrocybe-aegerita",
+    "cientifico": "Cyclocybe aegerita",
+    "comunes": ["Seta de chopo", "Pollancró", "Agrocibe del chopo"],
+    "grupo": "Setas de madera",
+    "comestibilidad": "comestible",
+    "resumen": "Setas en haces sobre chopos y olmos, con anillo membranoso y láminas marrón tabaco. Buen comestible.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["crema", "marron"], "insercion": ["adnatas"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["marron", "crema"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "otro"],
+      "sustrato": ["madera"], "arboles": ["chopo"],
+      "esporada": "marron", "meses": [4, 5, 6, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "4-12 cm, marrón de joven, crema al madurar, a menudo agrietado.",
+      "himenio": "Láminas blanquecinas que pasan a marrón tabaco.",
+      "pie": "Blanco, fibroso, con anillo membranoso persistente.",
+      "carne": "Blanca, olor a vino viejo.",
+      "habitat": "En haces sobre troncos y tocones de chopos, olmos y sauces. Primavera y otoño."
+    },
+    "confirmar": ["Anillo membranoso.", "Sobre chopo u olmo.", "Láminas marrón tabaco."],
+    "confusiones": [
+      { "id": "galerina-marginata", "como_distinguir": "Galerina (mortal): mucho más pequeña, sombrero miel higrófano, sobre coníferas." }
+    ],
+    "precauciones": "Sin confusiones peligrosas si se respeta el tamaño y el sustrato."
+  },
+  {
+    "id": "armillaria-mellea",
+    "cientifico": "Armillaria mellea",
+    "comunes": ["Seta de miel", "Armilaria", "Seta de tocón"],
+    "grupo": "Setas de madera",
+    "comestibilidad": "comestible_con_precaucion",
+    "popular": true,
+    "resumen": "Haces densos de setas color miel con anillo en la base de árboles y tocones. Comestible solo bien cocinada; indigesta para algunas personas.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["crema", "blanco"], "insercion": ["decurrentes", "adnatas"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["amarillo", "marron", "naranja"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["madera"], "arboles": ["cualquiera"],
+      "esporada": "blanca", "meses": [9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "4-12 cm, color miel a marrón, con pequeñas escamas oscuras en el centro.",
+      "himenio": "Láminas crema que se manchan de pardo, algo decurrentes. Esporada blanca.",
+      "pie": "Fibroso, con anillo blanco amarillento membranoso.",
+      "carne": "Blanquecina, fibrosa en el pie.",
+      "habitat": "Haces en tocones y base de árboles vivos (parásita). Otoño."
+    },
+    "confirmar": ["Anillo membranoso.", "Esporada blanca.", "Haces sobre madera."],
+    "confusiones": [
+      { "id": "hypholoma-fasciculare", "como_distinguir": "Hifoloma (tóxico): láminas amarillo verdosas, sabor amargo, sin anillo." },
+      { "id": "galerina-marginata", "como_distinguir": "Galerina (mortal): pequeña, láminas marrón óxido, esporada marrón." }
+    ],
+    "precauciones": "Hervir y desechar el agua; solo sombreros jóvenes. Prueba poca cantidad la primera vez."
+  },
+  {
+    "id": "hypholoma-fasciculare",
+    "cientifico": "Hypholoma fasciculare",
+    "comunes": ["Hifoloma de láminas verdes", "Seta azufrada", "Falsa seta de miel"],
+    "grupo": "Setas de madera",
+    "comestibilidad": "toxica",
+    "resumen": "Haces de setas amarillo azufre sobre madera con láminas verdosas y sabor amargo. Intoxicación digestiva.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["amarillo", "verde", "gris"], "insercion": ["adnatas"],
+      "anillo": "cortina", "volva": "no",
+      "color_sombrero": ["amarillo", "naranja"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["madera"], "arboles": ["cualquiera"],
+      "esporada": "purpura", "meses": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "2-6 cm, amarillo azufre con el centro naranja.",
+      "himenio": "Láminas amarillo azufre, después verde oliva y gris púrpura.",
+      "pie": "Amarillo, con una zona de cortina oscura.",
+      "carne": "Amarilla, sabor muy amargo.",
+      "habitat": "Haces en tocones y madera muerta. Todo el año."
+    },
+    "confirmar": ["Láminas con tono verdoso.", "Sabor amargo."],
+    "confusiones": [
+      { "id": "armillaria-mellea", "como_distinguir": "Seta de miel: anillo, láminas crema, no amarga." }
+    ],
+    "precauciones": "Gastroenteritis."
+  },
+  {
+    "id": "galerina-marginata",
+    "cientifico": "Galerina marginata",
+    "comunes": ["Galerina marginada", "Galerina mortal"],
+    "grupo": "Setas de madera",
+    "comestibilidad": "mortal",
+    "popular": true,
+    "resumen": "Setita marrón miel sobre madera con anillo pequeño. Contiene amatoxinas. Se confunde con setas de tocón comestibles.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["marron", "crema"], "insercion": ["adnatas"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["marron", "amarillo"], "tamano": ["pequeno"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["harina", "nada"],
+      "sustrato": ["madera"], "arboles": ["pino", "abeto", "cualquiera"],
+      "esporada": "marron", "meses": [9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "2-6 cm, marrón miel, higrófano (más claro al secarse), margen estriado en húmedo.",
+      "himenio": "Láminas ocre a marrón óxido. Esporada marrón óxido.",
+      "pie": "Marrón, con un anillo pequeño y frágil que puede desaparecer.",
+      "carne": "Marrón clara, olor débil a harina.",
+      "habitat": "En grupos sobre madera muerta, sobre todo de coníferas. Otoño."
+    },
+    "confirmar": ["Pequeña, marrón, sobre madera, con esporada marrón: déjala."],
+    "confusiones": [
+      { "id": "kuehneromyces-mutabilis", "como_distinguir": "Pie escamoso bajo el anillo; aun así, solo para expertos." },
+      { "id": "armillaria-mellea", "como_distinguir": "Seta de miel: esporada blanca, más grande." },
+      { "id": "flammulina-velutipes", "como_distinguir": "Pie aterciopelado negro, sin anillo, esporada blanca." }
+    ],
+    "precauciones": "Amatoxinas. Regla: ninguna seta pequeña y marrón sobre madera se come."
+  },
+  {
+    "id": "kuehneromyces-mutabilis",
+    "cientifico": "Kuehneromyces mutabilis",
+    "comunes": ["Foliota cambiante", "Seta de tocón escamosa"],
+    "grupo": "Setas de madera",
+    "comestibilidad": "comestible_con_precaucion",
+    "resumen": "Setas en haces sobre tocones con sombrero bicolor higrófano y pie escamoso. Comestible, pero su parecido con Galerina la hace solo apta para expertos.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["crema", "marron"], "insercion": ["adnatas"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["marron", "crema"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["madera"], "arboles": ["haya", "roble", "chopo", "cualquiera"],
+      "esporada": "marron", "meses": [4, 5, 6, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "3-7 cm, marcadamente higrófano: ocre oscuro en húmedo y crema desde el centro al secarse (dos tonos).",
+      "himenio": "Láminas crema a canela.",
+      "pie": "Con anillo y escamas erizadas por debajo del anillo.",
+      "carne": "Fina, olor agradable.",
+      "habitat": "Haces densos en tocones de frondosas. Primavera a otoño."
+    },
+    "confirmar": ["Pie claramente escamoso bajo el anillo.", "Sombrero con dos tonos."],
+    "confusiones": [
+      { "id": "galerina-marginata", "como_distinguir": "Galerina (mortal): pie liso o fibriloso, no escamoso; sobre todo en coníferas." }
+    ],
+    "precauciones": "No recomendable para aficionados por el riesgo con Galerina marginata."
+  },
+  {
+    "id": "flammulina-velutipes",
+    "cientifico": "Flammulina velutipes",
+    "comunes": ["Seta de invierno", "Pie aterciopelado", "Enoki silvestre"],
+    "grupo": "Setas de madera",
+    "comestibilidad": "comestible",
+    "resumen": "Setas naranja miel en haces sobre madera en pleno invierno, con pie aterciopelado oscuro. Comestible.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["crema", "blanco"], "insercion": ["adnatas"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["naranja", "amarillo", "marron"], "tamano": ["pequeno"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["madera"], "arboles": ["chopo", "cualquiera"],
+      "esporada": "blanca", "meses": [11, 12, 1, 2, 3]
+    },
+    "descripcion": {
+      "sombrero": "2-7 cm, naranja amarillento, viscoso.",
+      "himenio": "Láminas crema. Esporada blanca.",
+      "pie": "Aterciopelado, marrón oscuro a negro hacia la base. Sin anillo.",
+      "carne": "Fina, blanquecina.",
+      "habitat": "Haces sobre troncos de frondosas (olmo, chopo, sauce). Invierno."
+    },
+    "confirmar": ["Pie aterciopelado negro.", "Sin anillo, esporada blanca."],
+    "confusiones": [
+      { "id": "galerina-marginata", "como_distinguir": "Galerina: anillo, esporada marrón, pie no aterciopelado." }
+    ],
+    "precauciones": "Haz una esporada si tienes dudas: debe ser blanca."
+  },
+  {
+    "id": "coprinus-comatus",
+    "cientifico": "Coprinus comatus",
+    "comunes": ["Barbuda", "Apagador", "Matacandil", "Chipirón de monte"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Seta cilíndrica blanca y escamosa que se deshace en tinta. Comestible solo joven y recién cogida.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "rosa", "negro"], "insercion": ["libres"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["blanco"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["negro"], "olor": ["nada"],
+      "sustrato": ["prado", "suelo"], "arboles": ["ninguno", "cualquiera"],
+      "esporada": "negra", "meses": [4, 5, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm de alto, cilíndrico, blanco con escamas lanosas y la punta ocre.",
+      "himenio": "Láminas blancas, luego rosas y finalmente negras y líquidas.",
+      "pie": "Blanco, hueco, con un anillo fino móvil.",
+      "carne": "Blanca, fina.",
+      "habitat": "Bordes de caminos, prados, suelos removidos y jardines. Primavera y otoño."
+    },
+    "confirmar": ["Forma de huevo alargado con escamas.", "Láminas aún blancas."],
+    "confusiones": [
+      { "id": "coprinopsis-atramentaria", "como_distinguir": "Coprino de la tinta: gris, liso, sin escamas, tóxico con alcohol." }
+    ],
+    "precauciones": "Consumir en pocas horas; se licúa. Solo ejemplares con láminas blancas."
+  },
+  {
+    "id": "coprinopsis-atramentaria",
+    "cientifico": "Coprinopsis atramentaria",
+    "comunes": ["Coprino de la tinta", "Coprino antabús"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "toxica",
+    "resumen": "Coprino gris liso en haces. Contiene coprina: reacción tóxica si se toma alcohol en los días siguientes.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "gris", "negro"], "insercion": ["libres"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["gris", "marron"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["negro"], "olor": ["nada"],
+      "sustrato": ["suelo", "madera", "prado"], "arboles": ["cualquiera", "ninguno"],
+      "esporada": "negra", "meses": [4, 5, 6, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "4-8 cm, gris pardo, ovoide y luego acampanado, surcado, sin escamas lanosas.",
+      "himenio": "Láminas blancas que ennegrecen y se licúan.",
+      "pie": "Blanco, liso, sin anillo claro.",
+      "carne": "Fina, blanquecina.",
+      "habitat": "Haces en suelos ricos, cerca de tocones y raíces enterradas. Primavera a otoño."
+    },
+    "confirmar": ["Sombrero gris sin escamas.", "Crece en haces."],
+    "confusiones": [
+      { "id": "coprinus-comatus", "como_distinguir": "Barbuda: blanca con escamas, cilíndrica." }
+    ],
+    "precauciones": "Síndrome coprínico: enrojecimiento, palpitaciones y malestar al consumir alcohol hasta 3 días después."
+  },
+  {
+    "id": "cortinarius-orellanus",
+    "cientifico": "Cortinarius orellanus",
+    "comunes": ["Cortinario de montaña", "Cortinario mortal", "Cortinarius rubellus"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "mortal",
+    "popular": true,
+    "resumen": "Cortinarios naranja marrón con láminas espaciadas de color óxido y cortina en el pie. Orellanina: fallo renal que aparece días después. Ningún cortinario es seguro para aficionados.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["naranja", "marron"], "insercion": ["adnatas"],
+      "anillo": "cortina", "volva": "no",
+      "color_sombrero": ["naranja", "marron", "rojo"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["rabano", "nada"],
+      "sustrato": ["suelo"], "arboles": ["roble", "castano", "haya", "pino", "abeto"],
+      "esporada": "marron", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "3-8 cm, naranja marrón a rojizo, seco, fibriloso, con mamelón en C. rubellus.",
+      "himenio": "Láminas gruesas, espaciadas, naranja óxido. Esporada marrón óxido.",
+      "pie": "Amarillento ocre, con restos de cortina (telaraña) y a veces cinturones amarillos.",
+      "carne": "Amarillenta, olor a rábano.",
+      "habitat": "C. orellanus en frondosas (robles, castaños); C. rubellus en coníferas húmedas con musgo. Verano y otoño."
+    },
+    "confirmar": ["Telaraña (cortina) entre el margen y el pie en ejemplares jóvenes.", "Láminas óxido espaciadas."],
+    "confusiones": [
+      { "id": "cantharellus-cibarius", "como_distinguir": "Rebozuelo: pliegues en lugar de láminas, carne blanca, sin cortina." },
+      { "id": "lepista-nuda", "como_distinguir": "Pie azul: esporada rosada, sin cortina." }
+    ],
+    "precauciones": "Síndrome orellánico: sed, dolor lumbar e insuficiencia renal entre 2 y 17 días después. A menudo requiere diálisis o trasplante."
+  },
+  {
+    "id": "infundibulicybe-geotropa",
+    "cientifico": "Infundibulicybe geotropa",
+    "comunes": ["Platera", "Cabeza de fraile", "Clitocibe gigante"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "comestible",
+    "resumen": "Seta grande crema en embudo con mamelón central, en corros enormes en claros. Buen comestible.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["crema", "blanco"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["crema", "marron"], "tamano": ["grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["dulzon", "nada"],
+      "sustrato": ["suelo", "prado"], "arboles": ["cualquiera", "ninguno"],
+      "esporada": "blanca", "meses": [9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "10-25 cm, crema a ocre pálido, en embudo con un pequeño mamelón central.",
+      "himenio": "Láminas decurrentes, crema, apretadas.",
+      "pie": "Largo, robusto, del color del sombrero.",
+      "carne": "Blanca, elástica, olor débil dulzón.",
+      "habitat": "Claros herbosos y bordes de bosque, en corros grandes. Otoño."
+    },
+    "confirmar": ["Mamelón en el centro del embudo.", "Tamaño grande y pie alto."],
+    "confusiones": [
+      { "id": "entoloma-sinuatum", "como_distinguir": "Entoloma: láminas no decurrentes, rosadas." },
+      { "id": "clitocybe-rivulosa", "como_distinguir": "Clitocibe blanco: pequeño, en césped." }
+    ],
+    "precauciones": "Solo sombreros jóvenes; el pie es fibroso."
+  },
+  {
+    "id": "volvopluteus-gloiocephalus",
+    "cientifico": "Volvopluteus gloiocephalus",
+    "comunes": ["Volvaria viscosa", "Seta de los rastrojos", "Volvariella gloiocephala"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "comestible_con_precaucion",
+    "resumen": "Seta gris viscosa con volva y láminas rosas de rastrojos y compost. Comestible, pero con volva: fácil de confundir con amanitas. Desaconsejada a principiantes.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "rosa"], "insercion": ["libres"],
+      "anillo": "no", "volva": "si",
+      "color_sombrero": ["gris", "blanco"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "rabano"],
+      "sustrato": ["prado", "estiercol", "suelo"], "arboles": ["ninguno"],
+      "esporada": "rosa", "meses": [4, 5, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, gris a blanquecino, viscoso.",
+      "himenio": "Láminas libres, blancas y luego rosa salmón. Esporada rosa.",
+      "pie": "Blanco, sin anillo, con volva blanca en saco.",
+      "carne": "Blanca.",
+      "habitat": "Rastrojos, compost, huertos y suelos abonados. Primavera y otoño."
+    },
+    "confirmar": ["Láminas rosas en la madurez.", "Sin anillo.", "Esporada rosa."],
+    "confusiones": [
+      { "id": "amanita-phalloides", "como_distinguir": "Amanitas: anillo y láminas siempre blancas, esporada blanca." },
+      { "id": "amanita-verna", "como_distinguir": "Amanita de primavera: anillo, láminas blancas." }
+    ],
+    "precauciones": "Una seta con volva solo debería comerla quien pueda descartar una amanita con total seguridad."
+  }
+]

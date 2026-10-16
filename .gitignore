@@ -1,0 +1,14 @@
+.DS_Store
+._*
+.env
+.venv/
+imagenes/
+modelo_mejor.keras
+node_modules/
+public/modelo/
+public/pruebas/
+certs/
+dist/
+entrenar/*.log
+entrenar/modelo-*/
+public/modelo_mejor.keras

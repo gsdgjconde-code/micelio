@@ -1,0 +1,1068 @@
+[
+  {
+    "id": "amanita-phalloides",
+    "cientifico": "Amanita phalloides",
+    "comunes": ["Oronja verde", "Cicuta verde", "Farinera borda"],
+    "grupo": "Amanitas",
+    "comestibilidad": "mortal",
+    "popular": true,
+    "resumen": "Responsable de la mayoría de muertes por setas en Europa. Sombrero verdoso, láminas blancas, anillo y volva en saco.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "si",
+      "color_sombrero": ["verde", "amarillo", "blanco", "marron"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["dulzon", "nada"],
+      "sustrato": ["suelo"], "arboles": ["roble", "encina", "haya", "castano", "pino", "avellano"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, verde oliva a amarillo verdoso, a veces blanquecino, con fibrillas radiales innatas. Liso, sin verrugas (a veces un resto de velo).",
+      "himenio": "Láminas blancas, libres, apretadas. Esporada blanca.",
+      "pie": "Blanco con un jaspeado verdoso en zigzag. Anillo membranoso colgante. Volva blanca en forma de saco, a menudo enterrada.",
+      "carne": "Blanca, inmutable. Olor dulzón (a rosa marchita) en ejemplares viejos.",
+      "habitat": "Bajo frondosas (robles, encinas, castaños, hayas, avellanos) y también pinos. Final de verano a principios de invierno; en zonas cálidas también en primavera."
+    },
+    "confirmar": ["Desentierra la base completa: busca el saco (volva).", "Láminas blancas aunque la seta sea vieja.", "Anillo colgante en la parte alta del pie."],
+    "confusiones": [
+      { "id": "russula-virescens", "como_distinguir": "Las rúsulas no tienen anillo ni volva y su carne es granulosa y quebradiza." },
+      { "id": "russula-cyanoxantha", "como_distinguir": "Sin anillo ni volva; láminas flexibles que no se rompen." },
+      { "id": "tricholoma-portentosum", "como_distinguir": "Sin anillo ni volva; olor a harina." },
+      { "id": "agaricus-campestris", "como_distinguir": "El champiñón tiene láminas rosas o marrones, nunca blancas en adultos, y no tiene volva." }
+    ],
+    "precauciones": "Amatoxinas. Síntomas a las 6-24 h (vómitos, diarrea), falsa mejoría y después fallo hepático. Ante la mínima sospecha, acude a urgencias sin esperar a los síntomas."
+  },
+  {
+    "id": "amanita-verna",
+    "cientifico": "Amanita verna",
+    "comunes": ["Oronja blanca", "Cicuta blanca", "Amanita de primavera"],
+    "grupo": "Amanitas",
+    "comestibilidad": "mortal",
+    "popular": true,
+    "resumen": "Amanita completamente blanca de primavera. Se confunde con champiñones jóvenes; mortal.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "si",
+      "color_sombrero": ["blanco"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "dulzon"],
+      "sustrato": ["suelo"], "arboles": ["roble", "encina", "castano", "haya"],
+      "esporada": "blanca", "meses": [3, 4, 5, 6, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-10 cm, blanco puro, liso y algo viscoso en húmedo.",
+      "himenio": "Láminas blancas, libres.",
+      "pie": "Blanco, liso o poco fibriloso, con anillo membranoso y volva blanca en saco.",
+      "carne": "Blanca. Olor débil, algo dulzón en viejas.",
+      "habitat": "Frondosas (robles, encinas, castaños). Sobre todo en primavera, también en otoño."
+    },
+    "confirmar": ["Toda blanca con láminas blancas: desentierra la base y busca la volva.", "Compárala con un champiñón: el champiñón tiene láminas rosas o marrones."],
+    "confusiones": [
+      { "id": "agaricus-campestris", "como_distinguir": "Champiñón: láminas rosas o marrón chocolate, sin volva." },
+      { "id": "agaricus-arvensis", "como_distinguir": "Bola de nieve: olor a anís, láminas grisáceas o marrones, sin volva." },
+      { "id": "calocybe-gambosa", "como_distinguir": "Perretxiko: olor intenso a harina, sin anillo ni volva, láminas apretadas no libres." },
+      { "id": "lepiota-brunneoincarnata", "como_distinguir": "También mortal: más pequeña, con escamas rosadas y sin volva." }
+    ],
+    "precauciones": "Amatoxinas, igual que Amanita phalloides. Síntomas a las 6-24 h; urgencias de inmediato ante cualquier sospecha."
+  },
+  {
+    "id": "amanita-virosa",
+    "cientifico": "Amanita virosa",
+    "comunes": ["Ángel destructor", "Amanita virosa"],
+    "grupo": "Amanitas",
+    "comestibilidad": "mortal",
+    "resumen": "Amanita blanca de sombrero cónico y pie lanoso de bosques ácidos. Mortal.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "si",
+      "color_sombrero": ["blanco"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["dulzon", "desagradable"],
+      "sustrato": ["suelo"], "arboles": ["haya", "abedul", "pino", "abeto"],
+      "esporada": "blanca", "meses": [7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-12 cm, blanco, cónico-acampanado de joven y a menudo ladeado, viscoso.",
+      "himenio": "Láminas blancas, libres.",
+      "pie": "Blanco, fibriloso-lanoso, con anillo frágil a menudo desgarrado y volva en saco.",
+      "carne": "Blanca, olor dulzón desagradable.",
+      "habitat": "Bosques de suelos ácidos: hayedos, abedulares, pinares y abetales de montaña. Verano y otoño."
+    },
+    "confirmar": ["Sombrero puntiagudo y pie lanoso.", "Volva en saco al desenterrar.", "Láminas blancas."],
+    "confusiones": [
+      { "id": "agaricus-campestris", "como_distinguir": "Champiñón: láminas rosas o marrones, sin volva." },
+      { "id": "amanita-verna", "como_distinguir": "También mortal; sombrero más plano y liso." }
+    ],
+    "precauciones": "Amatoxinas. Síntomas a las 6-24 h. Urgencias inmediatas."
+  },
+  {
+    "id": "amanita-muscaria",
+    "cientifico": "Amanita muscaria",
+    "comunes": ["Matamoscas", "Falsa oronja", "Reig bord"],
+    "grupo": "Amanitas",
+    "comestibilidad": "toxica",
+    "popular": true,
+    "resumen": "La seta roja con puntos blancos de los cuentos. Tóxica (síndrome neurológico), no mortal en general.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "bulbo",
+      "color_sombrero": ["rojo", "naranja"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["abedul", "pino", "abeto", "castano", "haya"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "8-20 cm, rojo escarlata a naranja, con verrugas blancas que la lluvia puede lavar. Margen algo estriado.",
+      "himenio": "Láminas blancas, libres.",
+      "pie": "Blanco, con anillo membranoso y base bulbosa rodeada de anillos de escamas (restos de la volva).",
+      "carne": "Blanca, amarillenta bajo la cutícula. Sin olor especial.",
+      "habitat": "Abedules, pinos, abetos y castaños. Otoño."
+    },
+    "confirmar": ["Láminas y pie blancos (la oronja buena los tiene amarillos).", "Base bulbosa con cinturones de verrugas, no un saco."],
+    "confusiones": [
+      { "id": "amanita-caesarea", "como_distinguir": "Oronja: láminas y pie amarillos, volva blanca en saco, sombrero liso sin verrugas." }
+    ],
+    "precauciones": "Ácido iboténico y muscimol. A los 30 min-3 h: confusión, agitación, somnolencia, alucinaciones. Peligrosa para niños y en cantidad."
+  },
+  {
+    "id": "amanita-pantherina",
+    "cientifico": "Amanita pantherina",
+    "comunes": ["Amanita pantera", "Pixacà"],
+    "grupo": "Amanitas",
+    "comestibilidad": "toxica",
+    "popular": true,
+    "resumen": "Sombrero marrón con verrugas blancas pequeñas y margen estriado. Más tóxica que la matamoscas; se confunde con la amanita rojiza.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "bulbo",
+      "color_sombrero": ["marron", "gris"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "rabano"],
+      "sustrato": ["suelo"], "arboles": ["roble", "haya", "castano", "pino", "abeto", "encina"],
+      "esporada": "blanca", "meses": [7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-12 cm, marrón a gris pardo, con verrugas blancas pequeñas y regulares, margen claramente estriado.",
+      "himenio": "Láminas blancas, libres.",
+      "pie": "Blanco, con anillo liso (no estriado) situado bajo. Base bulbosa con la volva en forma de reborde (como un calcetín doblado) y uno o dos cinturones.",
+      "carne": "Blanca, no enrojece nunca.",
+      "habitat": "Frondosas y coníferas, suelos variados. Verano y otoño."
+    },
+    "confirmar": ["La carne no enrojece al corte ni al rozarla.", "Anillo liso y margen del sombrero estriado.", "Volva en reborde alrededor del bulbo."],
+    "confusiones": [
+      { "id": "amanita-rubescens", "como_distinguir": "La rojiza enrojece al corte y tiene el anillo estriado." },
+      { "id": "macrolepiota-procera", "como_distinguir": "La parasol tiene el pie jaspeado y anillo doble móvil; sin volva." }
+    ],
+    "precauciones": "Síndrome panterínico (neurológico) a los 30 min-3 h, más intenso que el de la matamoscas: delirio, convulsiones, coma en casos graves."
+  },
+  {
+    "id": "amanita-caesarea",
+    "cientifico": "Amanita caesarea",
+    "comunes": ["Oronja", "Amanita de los césares", "Reig", "Kuleto"],
+    "grupo": "Amanitas",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Una de las setas más apreciadas. Sombrero naranja liso, láminas y pie amarillos, volva blanca en saco.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["amarillo"], "insercion": ["libres"],
+      "anillo": "si", "volva": "si",
+      "color_sombrero": ["naranja", "rojo"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["encina", "castano", "roble"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "8-20 cm, naranja a rojo anaranjado, liso y brillante, margen estriado. De joven sale de un huevo blanco.",
+      "himenio": "Láminas amarillas, libres.",
+      "pie": "Amarillo, con anillo amarillo estriado y volva blanca grande en forma de saco.",
+      "carne": "Blanca, amarilla bajo la cutícula. Olor agradable.",
+      "habitat": "Alcornocales, encinares, castañares y robledales en zonas cálidas. Final de verano y otoño."
+    },
+    "confirmar": ["Láminas y pie AMARILLOS.", "Volva blanca en saco.", "Si está en huevo, córtalo a lo largo: se ve el sombrero naranja dentro."],
+    "confusiones": [
+      { "id": "amanita-muscaria", "como_distinguir": "Matamoscas: láminas y pie blancos, verrugas blancas en el sombrero, base bulbosa sin saco." },
+      { "id": "amanita-phalloides", "como_distinguir": "Los huevos cerrados se parecen: al cortarlos, la oronja verde muestra un sombrero verdoso y láminas blancas." }
+    ],
+    "precauciones": "No recojas huevos cerrados sin abrirlos: pueden ser de Amanita phalloides. Muy apreciada: respeta los límites de recolección de cada zona.",
+    "normativa": "Muy buscada; en varias comunidades hay límites de kilos por persona y día en montes regulados."
+  },
+  {
+    "id": "amanita-rubescens",
+    "cientifico": "Amanita rubescens",
+    "comunes": ["Amanita rojiza", "Amanita vinosa", "Galipierno"],
+    "grupo": "Amanitas",
+    "comestibilidad": "comestible_con_precaucion",
+    "resumen": "Comestible bien cocinada (tóxica cruda). Enrojece al corte; se confunde con la amanita pantera, tóxica.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "bulbo",
+      "color_sombrero": ["marron", "rosa"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["rojo"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["roble", "haya", "castano", "pino", "abeto"],
+      "esporada": "blanca", "meses": [6, 7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "6-15 cm, marrón rojizo a rosado, con verrugas grisáceas irregulares. Margen no estriado.",
+      "himenio": "Láminas blancas, libres, que se manchan de rojizo con la edad.",
+      "pie": "Blanquecino con tonos rosados, anillo amplio y estriado. Base bulbosa sin volva clara, a menudo rojiza.",
+      "carne": "Blanca, enrojece lentamente al corte y en las galerías de larvas.",
+      "habitat": "Todo tipo de bosques. Verano y otoño."
+    },
+    "confirmar": ["Enrojecimiento de la carne (sobre todo en la base del pie).", "Anillo estriado por arriba.", "Margen del sombrero liso, no estriado."],
+    "confusiones": [
+      { "id": "amanita-pantherina", "como_distinguir": "Pantera: no enrojece, anillo liso, margen estriado, volva en reborde." }
+    ],
+    "precauciones": "Siempre bien cocinada: cruda contiene hemolisinas. Solo si estás seguro de distinguirla de la pantera."
+  },
+  {
+    "id": "amanita-citrina",
+    "cientifico": "Amanita citrina",
+    "comunes": ["Amanita limón", "Falsa oronja verde"],
+    "grupo": "Amanitas",
+    "comestibilidad": "no_comestible",
+    "resumen": "Amarillo limón pálido con restos de velo, olor a patata cruda y bulbo marginado. Se confunde con la oronja verde.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "bulbo",
+      "color_sombrero": ["amarillo", "blanco", "crema"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["rabano", "otro"],
+      "sustrato": ["suelo"], "arboles": ["haya", "roble", "pino", "abeto", "castano"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "4-10 cm, amarillo limón pálido (a veces blanco), con placas de velo crema-ocre.",
+      "himenio": "Láminas blancas, libres.",
+      "pie": "Blanco-amarillento con anillo. Base con bulbo marginado (con un reborde), no un saco.",
+      "carne": "Blanca, olor a patata cruda o rábano.",
+      "habitat": "Bosques de suelos ácidos, frondosas y coníferas. Otoño."
+    },
+    "confirmar": ["Olor a patata cruda.", "Bulbo con reborde, no saco."],
+    "confusiones": [
+      { "id": "amanita-phalloides", "como_distinguir": "La oronja verde tiene volva en saco y no huele a patata. Ante la duda, descarta ambas." }
+    ],
+    "precauciones": "Contiene bufotenina; no es mortal, pero no se come y su parecido con la oronja verde la hace peligrosa."
+  },
+  {
+    "id": "amanita-gemmata",
+    "cientifico": "Amanita gemmata",
+    "comunes": ["Amanita junquillo", "Amanita gemada"],
+    "grupo": "Amanitas",
+    "comestibilidad": "toxica",
+    "resumen": "Amanita amarilla de pinares arenosos con verrugas blancas. Tóxica (síndrome panterínico).",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "bulbo",
+      "color_sombrero": ["amarillo", "crema"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino", "roble", "encina"],
+      "esporada": "blanca", "meses": [4, 5, 6, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "4-10 cm, amarillo junquillo, con verrugas blancas y margen estriado.",
+      "himenio": "Láminas blancas, libres.",
+      "pie": "Blanco, anillo frágil que suele desaparecer. Base bulbosa con volva en reborde.",
+      "carne": "Blanca, sin olor.",
+      "habitat": "Pinares arenosos y bosques claros. Primavera y otoño."
+    },
+    "confirmar": ["Verrugas blancas sobre amarillo.", "Volva en reborde alrededor del bulbo."],
+    "confusiones": [
+      { "id": "amanita-citrina", "como_distinguir": "La citrina huele a patata y tiene placas (no verrugas) de velo." }
+    ],
+    "precauciones": "Síndrome panterínico a los 30 min-3 h."
+  },
+  {
+    "id": "amanita-ovoidea",
+    "cientifico": "Amanita ovoidea",
+    "comunes": ["Oronja blanca mediterránea", "Amanita ovoide", "Farinera"],
+    "grupo": "Amanitas",
+    "comestibilidad": "no_comestible",
+    "resumen": "Amanita blanca grande y harinosa de zonas mediterráneas. Se ha comido tradicionalmente, pero se confunde con Amanita proxima, tóxica renal. No recomendable.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["libres"],
+      "anillo": "si", "volva": "si",
+      "color_sombrero": ["blanco"], "tamano": ["grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "otro"],
+      "sustrato": ["suelo"], "arboles": ["pino", "encina", "roble"],
+      "esporada": "blanca", "meses": [9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "10-30 cm, blanco, con el margen colgante de restos algodonosos del velo.",
+      "himenio": "Láminas blancas a crema, libres.",
+      "pie": "Blanco, grueso, harinoso. Anillo cremoso, algodonoso y frágil. Volva blanca, gruesa y membranosa.",
+      "carne": "Blanca, compacta.",
+      "habitat": "Pinares y encinares de suelos calcáreos en zonas mediterráneas. Otoño."
+    },
+    "confirmar": ["Volva BLANCA (si es ocre o rojiza, es A. proxima).", "Anillo algodonoso que se deshace."],
+    "confusiones": [
+      { "id": "amanita-proxima", "como_distinguir": "Proxima: volva de color ocre a marrón rojizo y anillo más membranoso. Tóxica renal." },
+      { "id": "amanita-verna", "como_distinguir": "Verna: más pequeña, primaveral, anillo membranoso y sin restos algodonosos." }
+    ],
+    "precauciones": "Desaconsejada: el riesgo de confusión con A. proxima (daño renal) no compensa."
+  },
+  {
+    "id": "amanita-proxima",
+    "cientifico": "Amanita proxima",
+    "comunes": ["Amanita próxima", "Falsa oronja blanca"],
+    "grupo": "Amanitas",
+    "comestibilidad": "toxica",
+    "resumen": "Amanita blanca con volva ocre-rojiza. Provoca daño renal. Muy parecida a A. ovoidea.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["libres"],
+      "anillo": "si", "volva": "si",
+      "color_sombrero": ["blanco"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino", "encina", "roble"],
+      "esporada": "blanca", "meses": [9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "6-15 cm, blanco, liso o con restos de velo.",
+      "himenio": "Láminas blancas a crema, libres.",
+      "pie": "Blanco con anillo membranoso persistente. Volva en saco de color ocre a marrón rojizo.",
+      "carne": "Blanca.",
+      "habitat": "Pinares y encinares mediterráneos, suelos calcáreos. Otoño."
+    },
+    "confirmar": ["Volva de color ocre o rojizo."],
+    "confusiones": [
+      { "id": "amanita-ovoidea", "como_distinguir": "Ovoidea: volva blanca y anillo algodonoso." }
+    ],
+    "precauciones": "Síndrome proximiano: vómitos a las 8-14 h y después insuficiencia renal. Requiere hospital."
+  },
+  {
+    "id": "amanita-vaginata",
+    "cientifico": "Amanita vaginata",
+    "comunes": ["Cucumela", "Amanita enfundada", "Pentinella"],
+    "grupo": "Amanitas",
+    "comestibilidad": "comestible_con_precaucion",
+    "resumen": "Amanita gris sin anillo, con margen muy estriado y volva en saco. Comestible cocinada, pero demasiado fácil de confundir con amanitas mortales jóvenes: desaconsejada para principiantes.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "no", "volva": "si",
+      "color_sombrero": ["gris", "marron"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["roble", "haya", "castano", "pino", "abedul"],
+      "esporada": "blanca", "meses": [6, 7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-10 cm, gris plomo a gris marrón, con el margen profundamente estriado, a veces con un resto de velo.",
+      "himenio": "Láminas blancas, libres.",
+      "pie": "Esbelto, blanco-grisáceo, frágil, SIN anillo. Volva blanca en saco, alta y membranosa.",
+      "carne": "Blanca, fina.",
+      "habitat": "Bosques de frondosas y coníferas. Verano y otoño."
+    },
+    "confirmar": ["Sin anillo (comprueba que no se ha caído).", "Margen muy estriado como un peine."],
+    "confusiones": [
+      { "id": "amanita-phalloides", "como_distinguir": "La oronja verde tiene anillo y el margen apenas estriado; ejemplares jóvenes o con el anillo perdido son indistinguibles para un aficionado." }
+    ],
+    "precauciones": "Solo cocinada. Dado el parecido con amanitas mortales, no se recomienda su consumo a quien no domine el género."
+  },
+  {
+    "id": "macrolepiota-procera",
+    "cientifico": "Macrolepiota procera",
+    "comunes": ["Parasol", "Apagador", "Galamperna", "Cucurril", "Matacandil"],
+    "grupo": "Lepiotas",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Seta grande con sombrero escamoso, pie alto jaspeado y anillo doble móvil. Buen comestible (solo el sombrero).",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["libres"],
+      "anillo": "si", "volva": "bulbo",
+      "color_sombrero": ["marron", "crema"], "tamano": ["grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "fruta"],
+      "sustrato": ["prado", "suelo"], "arboles": ["ninguno", "cualquiera"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "10-30 cm, primero ovoide como una maza, luego extendido con mamelón. Fondo crema con escamas marrones concéntricas, centro marrón liso.",
+      "himenio": "Láminas blancas, libres y separadas del pie por un collar.",
+      "pie": "15-40 cm, fino, hueco, fibroso, con jaspeado marrón en zigzag (como piel de serpiente). Base bulbosa. Anillo doble, grueso, que se puede deslizar arriba y abajo.",
+      "carne": "Blanca, inmutable. Olor agradable.",
+      "habitat": "Prados, claros, bordes de bosque y pastizales. Final de verano y otoño."
+    },
+    "confirmar": ["Más de 10 cm de sombrero.", "Pie jaspeado y anillo que se mueve.", "Carne que NO enrojece."],
+    "confusiones": [
+      { "id": "lepiota-brunneoincarnata", "como_distinguir": "Lepiota mortal: menos de 8 cm, pie sin jaspeado, con cinturones vinosos; crece en jardines y bordes de camino. Nunca comas lepiotas pequeñas." },
+      { "id": "chlorophyllum-rhacodes", "como_distinguir": "Pie liso sin jaspeado y carne que enrojece al corte." },
+      { "id": "amanita-pantherina", "como_distinguir": "Pantera: verrugas regulares, margen estriado, volva en reborde." }
+    ],
+    "precauciones": "Solo el sombrero; el pie es fibroso. Descarta cualquier ejemplar pequeño o con pie liso."
+  },
+  {
+    "id": "chlorophyllum-rhacodes",
+    "cientifico": "Chlorophyllum rhacodes",
+    "comunes": ["Parasol enrojeciente", "Apagador menor"],
+    "grupo": "Lepiotas",
+    "comestibilidad": "comestible_con_precaucion",
+    "resumen": "Parecida a la parasol, con pie liso y carne que enrojece. Comestible cocinada, pero provoca trastornos digestivos a algunas personas y hay especies de jardín (C. brunneum) tóxicas.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco", "crema"], "insercion": ["libres"],
+      "anillo": "si", "volva": "bulbo",
+      "color_sombrero": ["marron", "crema", "blanco"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["rojo"], "olor": ["nada"],
+      "sustrato": ["suelo", "prado"], "arboles": ["pino", "abeto", "cualquiera"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "8-20 cm, con escamas grandes, levantadas, marrones sobre fondo blanquecino.",
+      "himenio": "Láminas blancas, libres, que enrojecen al rozarlas.",
+      "pie": "Liso, sin jaspeado, blanquecino, con bulbo basal. Anillo doble.",
+      "carne": "Blanca, vira a naranja rojizo y después marrón al corte.",
+      "habitat": "Bosques de coníferas, jardines, compost, hojarasca. Otoño."
+    },
+    "confirmar": ["Carne que enrojece al corte.", "Pie liso (sin jaspeado)."],
+    "confusiones": [
+      { "id": "macrolepiota-procera", "como_distinguir": "Parasol: pie jaspeado, carne inmutable." },
+      { "id": "lepiota-brunneoincarnata", "como_distinguir": "Lepiota mortal: pequeña, escamas rosadas, cinturones vinosos en el pie." }
+    ],
+    "precauciones": "Cocinada. Evita los ejemplares de jardines, compost y bordes urbanos (Chlorophyllum brunneum, tóxica). Prueba poca cantidad la primera vez."
+  },
+  {
+    "id": "lepiota-brunneoincarnata",
+    "cientifico": "Lepiota brunneoincarnata",
+    "comunes": ["Lepiota mortal", "Lepiota de carne rosada"],
+    "grupo": "Lepiotas",
+    "comestibilidad": "mortal",
+    "popular": true,
+    "resumen": "Lepiota pequeña de jardines, parques y bordes de camino. Contiene amatoxinas como la oronja verde.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["marron", "rosa", "crema"], "tamano": ["pequeno"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["fruta", "nada"],
+      "sustrato": ["prado", "suelo"], "arboles": ["ninguno", "cualquiera"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "2-7 cm, con escamas marrón rosado concéntricas sobre fondo crema, centro más oscuro.",
+      "himenio": "Láminas blancas, libres.",
+      "pie": "Blanquecino con cinturones marrón vinoso por debajo de un anillo fugaz.",
+      "carne": "Blanca, rosada en el pie. Olor afrutado débil.",
+      "habitat": "Césped, jardines, parques, bordes de caminos, dunas. Otoño."
+    },
+    "confirmar": ["Menos de 8 cm.", "Cinturones vinosos en el pie.", "Crece en zonas herbosas o urbanas."],
+    "confusiones": [
+      { "id": "macrolepiota-procera", "como_distinguir": "Parasol: mucho más grande, pie jaspeado, anillo móvil." },
+      { "id": "agaricus-campestris", "como_distinguir": "Champiñón: láminas rosas o marrones." }
+    ],
+    "precauciones": "Amatoxinas: síntomas a las 6-24 h y fallo hepático. Regla de oro: no se come ninguna lepiota pequeña."
+  },
+  {
+    "id": "lepiota-cristata",
+    "cientifico": "Lepiota cristata",
+    "comunes": ["Lepiota crestada", "Lepiota maloliente"],
+    "grupo": "Lepiotas",
+    "comestibilidad": "toxica",
+    "resumen": "Lepiota pequeña blanca con escamas rojizas y olor fuerte desagradable. Tóxica.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["blanco"], "insercion": ["libres"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["blanco", "marron"], "tamano": ["pequeno"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["desagradable"],
+      "sustrato": ["suelo", "prado"], "arboles": ["cualquiera", "ninguno"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "2-5 cm, blanco con escamas marrón rojizo y centro liso rojizo.",
+      "himenio": "Láminas blancas, libres.",
+      "pie": "Blanco, fino, con un anillo pequeño y frágil.",
+      "carne": "Blanca. Olor fuerte, a goma o producto químico.",
+      "habitat": "Jardines, caminos, bosques. Otoño."
+    },
+    "confirmar": ["Olor desagradable intenso.", "Tamaño pequeño."],
+    "confusiones": [
+      { "id": "lepiota-brunneoincarnata", "como_distinguir": "Ambas se descartan: las lepiotas pequeñas no se comen." }
+    ],
+    "precauciones": "Trastornos digestivos y posible toxicidad mayor."
+  },
+  {
+    "id": "agaricus-campestris",
+    "cientifico": "Agaricus campestris",
+    "comunes": ["Champiñón silvestre", "Champiñón de prado", "Hongo de los prados"],
+    "grupo": "Champiñones",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "El champiñón de los prados. Láminas rosas que pasan a marrón chocolate, anillo simple. Buen comestible.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["rosa", "marron"], "insercion": ["libres"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["blanco", "crema"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no", "rojo"], "olor": ["nada", "fruta"],
+      "sustrato": ["prado"], "arboles": ["ninguno"],
+      "esporada": "marron", "meses": [4, 5, 6, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "4-10 cm, blanco, sedoso, a veces con escamillas.",
+      "himenio": "Láminas rosa vivo de joven, luego marrón chocolate. Esporada marrón oscuro.",
+      "pie": "Corto, blanco, con anillo simple y fino, frágil. Sin volva.",
+      "carne": "Blanca, enrojece muy ligeramente. Olor agradable.",
+      "habitat": "Prados y pastos abonados por el ganado. Primavera y otoño tras las lluvias."
+    },
+    "confirmar": ["Láminas rosas o marrones (nunca blancas en adultos).", "Sin volva al desenterrar.", "La base del pie no amarillea al cortarla."],
+    "confusiones": [
+      { "id": "amanita-verna", "como_distinguir": "Amanita mortal: láminas blancas y volva en saco." },
+      { "id": "agaricus-xanthodermus", "como_distinguir": "Champiñón amarilleante: amarillea con intensidad en la base del pie y huele a tinta." },
+      { "id": "lepiota-brunneoincarnata", "como_distinguir": "Lepiota mortal: láminas blancas, escamas rosadas." }
+    ],
+    "precauciones": "Desecha los ejemplares cuyo pie amarillee al cortar o que huelan a fenol."
+  },
+  {
+    "id": "agaricus-arvensis",
+    "cientifico": "Agaricus arvensis",
+    "comunes": ["Bola de nieve", "Champiñón anisado", "Champiñón de campo"],
+    "grupo": "Champiñones",
+    "comestibilidad": "comestible",
+    "resumen": "Champiñón grande, blanco, con olor a anís y anillo doble en rueda dentada. Excelente comestible.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["gris", "rosa", "marron"], "insercion": ["libres"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["blanco", "crema"], "tamano": ["grande", "mediano"],
+      "latex": ["no"], "viraje": ["amarillo", "no"], "olor": ["anis"],
+      "sustrato": ["prado"], "arboles": ["ninguno"],
+      "esporada": "marron", "meses": [6, 7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "8-20 cm, blanco a crema, amarillea débilmente al rozarlo.",
+      "himenio": "Láminas gris pálido de joven, luego rosa grisáceo y marrón oscuro.",
+      "pie": "Blanco, con anillo doble cuya cara inferior forma una rueda dentada.",
+      "carne": "Blanca, amarillea ligeramente. Olor claro a anís.",
+      "habitat": "Prados, pastos y claros. Verano y otoño."
+    },
+    "confirmar": ["Olor a anís.", "Amarilleamiento débil y lento, no intenso.", "Anillo en rueda dentada."],
+    "confusiones": [
+      { "id": "agaricus-xanthodermus", "como_distinguir": "Amarillea intensamente en la base del pie y huele a tinta o fenol." },
+      { "id": "amanita-verna", "como_distinguir": "Amanita mortal: láminas blancas y volva." }
+    ],
+    "precauciones": "Corta la base del pie: si se pone amarillo cromo al instante, deséchalo."
+  },
+  {
+    "id": "agaricus-xanthodermus",
+    "cientifico": "Agaricus xanthodermus",
+    "comunes": ["Champiñón amarilleante", "Champiñón de la tinta"],
+    "grupo": "Champiñones",
+    "comestibilidad": "toxica",
+    "popular": true,
+    "resumen": "Champiñón blanco que amarillea con intensidad y huele a tinta o fenol. Causa trastornos digestivos.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["rosa", "gris", "marron"], "insercion": ["libres"],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["blanco"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["amarillo"], "olor": ["desagradable", "otro"],
+      "sustrato": ["prado", "suelo"], "arboles": ["ninguno", "cualquiera"],
+      "esporada": "marron", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, blanco, a menudo con la parte superior aplanada o truncada de joven. Amarillea en amarillo cromo al rozarlo, sobre todo en el margen.",
+      "himenio": "Láminas rosa grisáceo que pasan a marrón.",
+      "pie": "Blanco, con anillo membranoso. La carne de la base del pie es amarilla intensa al cortarla.",
+      "carne": "Blanca, amarillea al instante. Olor a tinta, fenol o yodo, más fuerte al cocinar.",
+      "habitat": "Prados, jardines, parques y bordes de bosque. Otoño."
+    },
+    "confirmar": ["Corta la base del pie: amarillo intenso inmediato.", "Olor a tinta."],
+    "confusiones": [
+      { "id": "agaricus-campestris", "como_distinguir": "Champiñón silvestre: no amarillea, sin olor a fenol." },
+      { "id": "agaricus-arvensis", "como_distinguir": "Bola de nieve: olor a anís, amarilleo débil." }
+    ],
+    "precauciones": "Vómitos y diarrea a las 1-3 h. No es mortal, pero muy desagradable."
+  },
+  {
+    "id": "boletus-edulis",
+    "cientifico": "Boletus edulis",
+    "comunes": ["Boleto", "Hongo calabaza", "Cep", "Onddo", "Miguel"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "El boleto por excelencia. Poros blancos que amarillean, pie rechoncho con retículo blanco, carne inmutable y dulce.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["blanco", "amarillo", "verde"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "fruta"],
+      "sustrato": ["suelo"], "arboles": ["pino", "abeto", "haya", "roble", "castano"],
+      "esporada": "marron", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "8-25 cm, marrón claro a oscuro, liso, algo viscoso en húmedo, con el margen blanquecino.",
+      "himenio": "Poros finos, blancos de joven, después amarillos y verde oliva. Los tubos se separan fácilmente de la carne.",
+      "pie": "Grueso, panzudo, blanquecino a marrón claro con un retículo blanco fino en la parte superior.",
+      "carne": "Blanca, inmutable, sabor dulce a avellana.",
+      "habitat": "Pinares, abetales, hayedos, robledales y castañares. Final de verano y otoño."
+    },
+    "confirmar": ["Poros blancos o amarillo verdosos, nunca rojos ni rosas.", "Carne que NO azulea.", "Prueba un trocito crudo: no debe amargar (escúpelo)."],
+    "confusiones": [
+      { "id": "tylopilus-felleus", "como_distinguir": "Boleto amargo: poros rosados en adultos, retículo marrón oscuro en el pie, sabor muy amargo." },
+      { "id": "caloboletus-calopus", "como_distinguir": "Pie rojo y amargo, poros amarillos que azulean." }
+    ],
+    "precauciones": "Revisa las larvas. Sin confusiones peligrosas si respetas la regla de los poros no rojos.",
+    "normativa": "Especie regulada en muchos cotos micológicos: permiso y límite de kilos."
+  },
+  {
+    "id": "boletus-aereus",
+    "cientifico": "Boletus aereus",
+    "comunes": ["Hongo negro", "Boleto negro", "Cep negre"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Boleto de sombrero marrón oscuro casi negro y aterciopelado, de encinares y alcornocales. Excelente.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["blanco", "amarillo"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron", "negro"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["encina", "roble", "castano"],
+      "esporada": "marron", "meses": [6, 7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "8-20 cm, marrón muy oscuro a negruzco, seco y aterciopelado.",
+      "himenio": "Poros blancos y después amarillentos.",
+      "pie": "Marrón con retículo del mismo color o más claro.",
+      "carne": "Blanca, inmutable, firme.",
+      "habitat": "Encinares, alcornocales, robledales y castañares de zonas cálidas. Verano y otoño."
+    },
+    "confirmar": ["Poros blancos o amarillos.", "Carne inmutable."],
+    "confusiones": [
+      { "id": "tylopilus-felleus", "como_distinguir": "Boleto amargo: poros rosados, muy amargo." }
+    ],
+    "precauciones": "Sin confusiones peligrosas."
+  },
+  {
+    "id": "boletus-pinophilus",
+    "cientifico": "Boletus pinophilus",
+    "comunes": ["Boleto de pino", "Hongo rojo"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "resumen": "Boleto de sombrero rojo caoba de los pinares. Excelente.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["blanco", "amarillo"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["rojo", "marron"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino", "abeto"],
+      "esporada": "marron", "meses": [5, 6, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "8-25 cm, rojo caoba a marrón rojizo, con la superficie a menudo arrugada.",
+      "himenio": "Poros blancos y después amarillos.",
+      "pie": "Robusto, marrón rojizo con retículo blanco o rosado.",
+      "carne": "Blanca, rojiza bajo la cutícula, inmutable.",
+      "habitat": "Pinares y abetales, también hayedos. Primavera tardía y otoño."
+    },
+    "confirmar": ["Poros no rojos.", "Carne inmutable y dulce."],
+    "confusiones": [
+      { "id": "tylopilus-felleus", "como_distinguir": "Poros rosados y sabor amargo." }
+    ],
+    "precauciones": "Sin confusiones peligrosas."
+  },
+  {
+    "id": "boletus-reticulatus",
+    "cientifico": "Boletus reticulatus",
+    "comunes": ["Boleto de verano", "Boleto reticulado"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "resumen": "Boleto de verano de frondosas, con cutícula que se agrieta en seco y retículo que cubre todo el pie.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["blanco", "amarillo"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron", "crema"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["roble", "haya", "castano", "encina"],
+      "esporada": "marron", "meses": [5, 6, 7, 8, 9, 10]
+    },
+    "descripcion": {
+      "sombrero": "6-20 cm, marrón claro a ocre, seco, aterciopelado, que se agrieta con el calor.",
+      "himenio": "Poros blancos y después amarillos.",
+      "pie": "Marrón claro con un retículo marcado que cubre casi todo el pie.",
+      "carne": "Blanca, blanda, inmutable.",
+      "habitat": "Robledales, hayedos, castañares. Finales de primavera a otoño."
+    },
+    "confirmar": ["Poros no rojos ni rosas.", "Sabor dulce."],
+    "confusiones": [
+      { "id": "tylopilus-felleus", "como_distinguir": "Poros rosados, retículo oscuro, amargo." }
+    ],
+    "precauciones": "Suele tener larvas en verano."
+  },
+  {
+    "id": "tylopilus-felleus",
+    "cientifico": "Tylopilus felleus",
+    "comunes": ["Boleto amargo", "Boleto de hiel"],
+    "grupo": "Boletos",
+    "comestibilidad": "no_comestible",
+    "popular": true,
+    "resumen": "Doble amargo del boleto. Poros rosados, retículo marrón oscuro. Un solo ejemplar estropea un guiso.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["blanco", "rosa"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino", "abeto", "haya", "roble"],
+      "esporada": "rosa", "meses": [7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, marrón a beige, aterciopelado.",
+      "himenio": "Poros blancos de joven, rosados en la madurez.",
+      "pie": "Amarillento a marrón con un retículo marrón oscuro de malla ancha.",
+      "carne": "Blanca, a veces rosada, sabor muy amargo.",
+      "habitat": "Coníferas y frondosas en suelos ácidos. Verano y otoño."
+    },
+    "confirmar": ["Sabor amargo intenso al probar un trocito.", "Poros con tono rosado."],
+    "confusiones": [
+      { "id": "boletus-edulis", "como_distinguir": "Boleto: poros blancos o amarillos, retículo blanco, sabor dulce." }
+    ],
+    "precauciones": "No es tóxica, pero su amargor es incomible."
+  },
+  {
+    "id": "caloboletus-calopus",
+    "cientifico": "Caloboletus calopus",
+    "comunes": ["Boleto de pie rojo amargo", "Boleto de pie bonito"],
+    "grupo": "Boletos",
+    "comestibilidad": "no_comestible",
+    "resumen": "Sombrero gris beige, poros amarillos que azulean y pie amarillo y rojo con retículo. Amargo.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["amarillo"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["gris", "crema", "marron"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["azul"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino", "abeto", "haya", "roble"],
+      "esporada": "marron", "meses": [7, 8, 9, 10]
+    },
+    "descripcion": {
+      "sombrero": "6-15 cm, gris beige a marrón claro, mate.",
+      "himenio": "Poros amarillos que azulean al tocarlos.",
+      "pie": "Amarillo en la parte superior y rojo carmín en la inferior, con retículo.",
+      "carne": "Amarillenta, azulea, sabor amargo.",
+      "habitat": "Coníferas y frondosas. Verano y otoño."
+    },
+    "confirmar": ["Sabor amargo.", "Pie bicolor amarillo y rojo."],
+    "confusiones": [
+      { "id": "boletus-edulis", "como_distinguir": "Boleto: no azulea, pie sin rojo, dulce." }
+    ],
+    "precauciones": "Amargo e indigesto."
+  },
+  {
+    "id": "rubroboletus-satanas",
+    "cientifico": "Rubroboletus satanas",
+    "comunes": ["Boleto de Satanás", "Boleto satán", "Mataparent"],
+    "grupo": "Boletos",
+    "comestibilidad": "toxica",
+    "popular": true,
+    "resumen": "Boleto grande de sombrero blanquecino, poros rojos y pie rechoncho rojo con retículo. Intoxicación digestiva grave.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["rojo", "naranja", "amarillo"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["blanco", "gris", "crema"], "tamano": ["grande"],
+      "latex": ["no"], "viraje": ["azul"], "olor": ["desagradable", "nada"],
+      "sustrato": ["suelo"], "arboles": ["roble", "encina", "haya", "castano"],
+      "esporada": "marron", "meses": [7, 8, 9, 10]
+    },
+    "descripcion": {
+      "sombrero": "10-30 cm, blanquecino a gris claro, a veces con tonos verdosos.",
+      "himenio": "Poros amarillos de muy joven, pronto naranjas y rojo sangre.",
+      "pie": "Muy grueso y panzudo, amarillo arriba y rojo abajo, con retículo rojo.",
+      "carne": "Blanquecina, azulea débilmente. Olor desagradable en ejemplares viejos.",
+      "habitat": "Robledales, encinares y hayedos de suelos calcáreos. Verano y principio de otoño."
+    },
+    "confirmar": ["Sombrero claro + poros rojos + pie con retículo rojo.", "Azulea poco al corte."],
+    "confusiones": [
+      { "id": "neoboletus-erythropus", "como_distinguir": "Pie rojo comestible: sombrero marrón oscuro, pie punteado sin retículo, azulea intensamente." },
+      { "id": "suillellus-luridus", "como_distinguir": "Luridus: sombrero marrón oliva, azulea mucho." }
+    ],
+    "precauciones": "Vómitos y diarrea intensos a las 1-4 h. Regla segura para principiantes: ningún boleto de poros rojos."
+  },
+  {
+    "id": "neoboletus-erythropus",
+    "cientifico": "Neoboletus erythropus",
+    "comunes": ["Boleto de pie rojo", "Pata roja", "Hongo de pie rojo"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible_con_precaucion",
+    "resumen": "Sombrero marrón oscuro, poros rojos y pie amarillo punteado de rojo. Azulea de forma espectacular. Comestible bien cocinado; tóxico crudo.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["rojo", "naranja"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["azul"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino", "abeto", "haya", "roble", "castano"],
+      "esporada": "marron", "meses": [6, 7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "6-20 cm, marrón oscuro, aterciopelado, a veces con tonos rojizos.",
+      "himenio": "Poros rojos a rojo anaranjado, azulean de inmediato al tocarlos.",
+      "pie": "Amarillo, densamente punteado de rojo, SIN retículo.",
+      "carne": "Amarilla, azulea intensa e instantáneamente al corte.",
+      "habitat": "Bosques de coníferas y frondosas en suelos ácidos. Verano y otoño."
+    },
+    "confirmar": ["Pie punteado, sin retículo.", "Sombrero oscuro.", "Azuleo intenso e inmediato."],
+    "confusiones": [
+      { "id": "rubroboletus-satanas", "como_distinguir": "Satanás: sombrero claro, pie con retículo rojo, azulea poco." }
+    ],
+    "precauciones": "Siempre cocinado a fondo. Si no distingues con seguridad retículo de punteado, no cojas boletos de poros rojos."
+  },
+  {
+    "id": "suillellus-luridus",
+    "cientifico": "Suillellus luridus",
+    "comunes": ["Boleto lúrido", "Hongo lívido"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible_con_precaucion",
+    "resumen": "Boleto de poros naranjas y pie con retículo rojo, carne que azulea, con una línea roja sobre los tubos. Comestible cocinado, pero fácil de confundir con el de Satanás.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["naranja", "rojo"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron", "verde", "amarillo"], "tamano": ["mediano", "grande"],
+      "latex": ["no"], "viraje": ["azul"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["roble", "encina", "haya", "castano"],
+      "esporada": "marron", "meses": [6, 7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "6-15 cm, marrón oliva a amarillento, aterciopelado.",
+      "himenio": "Poros naranjas a rojos, azulean.",
+      "pie": "Amarillo anaranjado con retículo rojo.",
+      "carne": "Amarilla, azulea con fuerza. Línea roja entre la carne y los tubos.",
+      "habitat": "Frondosas sobre suelos calcáreos. Verano y otoño."
+    },
+    "confirmar": ["Línea roja sobre los tubos al cortar.", "Sombrero oscuro, no blanquecino."],
+    "confusiones": [
+      { "id": "rubroboletus-satanas", "como_distinguir": "Satanás: sombrero blanquecino, pie muy panzudo, azulea poco." }
+    ],
+    "precauciones": "Bien cocinado. Desaconsejado para principiantes por la confusión con el boleto de Satanás."
+  },
+  {
+    "id": "suillus-luteus",
+    "cientifico": "Suillus luteus",
+    "comunes": ["Babosa", "Boleto anillado", "Mocosa"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Boleto viscoso de pino con anillo. Comestible mediocre: hay que quitar la cutícula y los tubos.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["amarillo"], "insercion": [],
+      "anillo": "si", "volva": "no",
+      "color_sombrero": ["marron"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino"],
+      "esporada": "marron", "meses": [9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "5-12 cm, marrón chocolate, muy viscoso.",
+      "himenio": "Poros amarillos pequeños.",
+      "pie": "Amarillento con un anillo membranoso blanco violáceo.",
+      "carne": "Blanca amarillenta, inmutable.",
+      "habitat": "Pinares. Otoño."
+    },
+    "confirmar": ["Anillo membranoso.", "Cutícula viscosa que se pela."],
+    "confusiones": [],
+    "precauciones": "Quita la cutícula (laxante) y los tubos. Consume ejemplares jóvenes."
+  },
+  {
+    "id": "suillus-granulatus",
+    "cientifico": "Suillus granulatus",
+    "comunes": ["Boleto granulado", "Babosa sin anillo"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "resumen": "Boleto viscoso de pino sin anillo, con gotas lechosas en los poros jóvenes. Comestible si se pela.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["amarillo"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron", "amarillo", "naranja"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino"],
+      "esporada": "marron", "meses": [4, 5, 9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "4-10 cm, marrón amarillento a naranja, viscoso.",
+      "himenio": "Poros amarillos que exudan gotas lechosas de joven.",
+      "pie": "Amarillento con gránulos en la parte superior. Sin anillo.",
+      "carne": "Amarillenta, inmutable.",
+      "habitat": "Pinares. Primavera y otoño."
+    },
+    "confirmar": ["Gotitas en los poros jóvenes.", "Sin anillo."],
+    "confusiones": [],
+    "precauciones": "Quita la cutícula; laxante en cantidad."
+  },
+  {
+    "id": "suillus-bellinii",
+    "cientifico": "Suillus bellinii",
+    "comunes": ["Boleto de Bellini", "Pinatell"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "resumen": "Boleto de los pinares mediterráneos, sombrero blanco crema con centro marrón, sin anillo.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["amarillo", "crema"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["blanco", "crema", "marron"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino"],
+      "esporada": "marron", "meses": [10, 11, 12, 1]
+    },
+    "descripcion": {
+      "sombrero": "5-12 cm, blanco crema con el centro marrón, viscoso.",
+      "himenio": "Poros amarillo crema, algo decurrentes.",
+      "pie": "Corto, amarillento con gránulos rojizos. Sin anillo.",
+      "carne": "Blanquecina, inmutable.",
+      "habitat": "Pinares mediterráneos (pino piñonero, carrasco). Otoño e invierno."
+    },
+    "confirmar": ["Pinar mediterráneo.", "Sin anillo, pie granuloso."],
+    "confusiones": [],
+    "precauciones": "Quita la cutícula."
+  },
+  {
+    "id": "leccinum-scabrum",
+    "cientifico": "Leccinum scabrum",
+    "comunes": ["Boleto áspero del abedul", "Boleto de abedul"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "resumen": "Boleto de pie escamoso negruzco que crece bajo abedules. Comestible.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["blanco", "gris"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron", "gris"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["abedul"],
+      "esporada": "marron", "meses": [7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, marrón grisáceo, liso.",
+      "himenio": "Poros blancos que pasan a gris.",
+      "pie": "Largo, blanco, cubierto de escamas negruzcas ásperas.",
+      "carne": "Blanca, blanda, inmutable o ligeramente rosada.",
+      "habitat": "Bajo abedules. Verano y otoño."
+    },
+    "confirmar": ["Pie con escamas negras.", "Abedules cerca."],
+    "confusiones": [],
+    "precauciones": "Cocinar bien; la carne se vuelve blanda en ejemplares viejos."
+  },
+  {
+    "id": "imleria-badia",
+    "cientifico": "Imleria badia",
+    "comunes": ["Boleto bayo", "Boleto castaño"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "popular": true,
+    "resumen": "Boleto de sombrero castaño y poros amarillos que azulean al tocarlos. Buen comestible de pinares.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["amarillo", "crema"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["azul"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["pino", "abeto"],
+      "esporada": "marron", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, marrón castaño, algo viscoso en húmedo.",
+      "himenio": "Poros amarillo pálido que azulean al presionarlos.",
+      "pie": "Marrón amarillento, estriado, sin retículo.",
+      "carne": "Blanquecina a amarillenta, azulea ligeramente.",
+      "habitat": "Pinares y abetales, también hayedos. Otoño."
+    },
+    "confirmar": ["Poros amarillos (no rojos) que azulean.", "Pie sin retículo."],
+    "confusiones": [
+      { "id": "caloboletus-calopus", "como_distinguir": "Pie rojo y sabor amargo." }
+    ],
+    "precauciones": "Sin confusiones peligrosas."
+  },
+  {
+    "id": "xerocomellus-chrysenteron",
+    "cientifico": "Xerocomellus chrysenteron",
+    "comunes": ["Boleto agrietado", "Boleto de carne amarilla"],
+    "grupo": "Boletos",
+    "comestibilidad": "comestible",
+    "resumen": "Boleto pequeño con la cutícula agrietada mostrando carne rojiza. Comestible mediocre.",
+    "rasgos": {
+      "himenio": ["poros"], "color_himenio": ["amarillo"], "insercion": [],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron", "verde", "rojo"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["azul"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["cualquiera"],
+      "esporada": "marron", "meses": [7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "3-8 cm, marrón oliva, agrietado dejando ver carne rojiza.",
+      "himenio": "Poros amarillos, grandes y angulosos, azulean débilmente.",
+      "pie": "Amarillo con tonos rojos.",
+      "carne": "Amarillenta, rojiza bajo la cutícula, azulea poco.",
+      "habitat": "Todo tipo de bosques. Verano y otoño."
+    },
+    "confirmar": ["Grietas rojizas en el sombrero."],
+    "confusiones": [],
+    "precauciones": "Se pone blando y esponjoso; consume solo ejemplares jóvenes."
+  },
+  {
+    "id": "paxillus-involutus",
+    "cientifico": "Paxillus involutus",
+    "comunes": ["Paxilo enrollado", "Seta de margen enrollado"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "mortal",
+    "popular": true,
+    "resumen": "Seta ocre con margen enrollado y láminas decurrentes que se separan de la carne. Antes se comía: hoy se sabe que provoca una reacción inmunológica acumulativa que puede ser mortal.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["crema", "marron", "amarillo"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["marron", "crema"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo"], "arboles": ["abedul", "pino", "roble", "cualquiera"],
+      "esporada": "marron", "meses": [7, 8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, ocre a marrón oliva, con el margen fuertemente enrollado y a menudo acanalado. Viscoso en húmedo.",
+      "himenio": "Láminas decurrentes, crema a ocre, que se manchan de marrón al tocarlas y se despegan fácilmente de la carne con el dedo.",
+      "pie": "Corto, del color del sombrero, se mancha de marrón.",
+      "carne": "Amarillenta, se oscurece.",
+      "habitat": "Abedules, pinos, parques y jardines. Verano y otoño."
+    },
+    "confirmar": ["Margen enrollado.", "Láminas que se separan en bloque de la carne."],
+    "confusiones": [
+      { "id": "lactarius-deliciosus", "como_distinguir": "El níscalo suelta látex naranja." }
+    ],
+    "precauciones": "Síndrome paxílico: hemólisis por reacción inmunológica tras consumos repetidos. Puede causar fallo renal y muerte. No se come en ningún caso."
+  },
+  {
+    "id": "hygrophoropsis-aurantiaca",
+    "cientifico": "Hygrophoropsis aurantiaca",
+    "comunes": ["Falso rebozuelo", "Rebozuelo anaranjado falso"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "no_comestible",
+    "resumen": "Imitador del rebozuelo con láminas verdaderas finas y bifurcadas. No tóxica grave, pero indigesta.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["naranja"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["naranja", "amarillo"], "tamano": ["pequeno", "mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada"],
+      "sustrato": ["suelo", "madera"], "arboles": ["pino", "abeto"],
+      "esporada": "blanca", "meses": [8, 9, 10, 11, 12]
+    },
+    "descripcion": {
+      "sombrero": "3-8 cm, naranja, aterciopelado, en forma de embudo.",
+      "himenio": "Láminas verdaderas, finas, muy bifurcadas, decurrentes, de color naranja vivo.",
+      "pie": "Naranja, a menudo curvado.",
+      "carne": "Blanda, amarillenta, sin olor afrutado.",
+      "habitat": "Pinares, sobre restos de madera y acículas. Otoño."
+    },
+    "confirmar": ["Láminas finas como cuchillas (el rebozuelo tiene pliegues gruesos).", "Carne blanda y naranja."],
+    "confusiones": [
+      { "id": "cantharellus-cibarius", "como_distinguir": "Rebozuelo: pliegues gruesos, carne blanca firme, olor a albaricoque." },
+      { "id": "omphalotus-olearius", "como_distinguir": "Seta de olivo: en haces sobre madera, tóxica." }
+    ],
+    "precauciones": "Trastornos digestivos leves en algunas personas."
+  },
+  {
+    "id": "omphalotus-olearius",
+    "cientifico": "Omphalotus olearius",
+    "comunes": ["Seta de olivo", "Falso rebozuelo de olivo", "Bolet d'olivera"],
+    "grupo": "Otras setas con láminas",
+    "comestibilidad": "toxica",
+    "popular": true,
+    "resumen": "Setas naranjas en haces sobre madera de olivo, encina o castaño. Láminas verdaderas y luminiscentes. Intoxicación digestiva fuerte.",
+    "rasgos": {
+      "himenio": ["laminas"], "color_himenio": ["naranja", "amarillo"], "insercion": ["decurrentes"],
+      "anillo": "no", "volva": "no",
+      "color_sombrero": ["naranja"], "tamano": ["mediano"],
+      "latex": ["no"], "viraje": ["no"], "olor": ["nada", "desagradable"],
+      "sustrato": ["madera"], "arboles": ["olivo", "encina", "castano", "roble"],
+      "esporada": "crema", "meses": [8, 9, 10, 11]
+    },
+    "descripcion": {
+      "sombrero": "5-15 cm, naranja intenso a marrón anaranjado, en embudo.",
+      "himenio": "Láminas decurrentes, naranjas, apretadas, que brillan débilmente en la oscuridad.",
+      "pie": "Naranja, curvado, unido a otros en la base formando haces.",
+      "carne": "Naranja amarillenta.",
+      "habitat": "En haces densos en la base o raíces de olivos, encinas, castaños y robles. Verano y otoño."
+    },
+    "confirmar": ["Crece en haces sobre madera o raíces.", "Láminas verdaderas (no pliegues)."],
+    "confusiones": [
+      { "id": "cantharellus-cibarius", "como_distinguir": "Rebozuelo: nunca en haces sobre madera, pliegues gruesos, carne blanca." }
+    ],
+    "precauciones": "Vómitos y diarrea intensos a las 1-3 h."
+  }
+]
