@@ -1,7 +1,7 @@
 // Service worker: deja toda la app (interfaz, guía, clave y TensorFlow.js) disponible sin
 // conexión. Con red intenta siempre la versión nueva (con un tiempo máximo corto) y, si
 // no llega, sirve la copia guardada. Las llamadas a /api van siempre a la red.
-const CACHE = "micelio-v6";
+const CACHE = "micelio-v7";
 const BASE = new URL("./", self.location).pathname; // "/" o "/micelio/"
 const TESELAS = "micelio-teselas";
 const MAX_TESELAS = 4000;

@@ -131,9 +131,10 @@ export function renderResultado({ cuerpo } = {}) {
   cont.innerHTML = partes.join("");
 }
 
-export function montar({ requiereToken }) {
+export function montar({ requiereToken, disponible = true }) {
   estado.requiereToken = requiereToken;
-  registrarSegundaOpinion(segundaOpinion);
+  // Sin servidor de IA (por ejemplo, la app publicada como sitio estático) el botón no aparece
+  if (disponible) registrarSegundaOpinion(segundaOpinion);
   $("#btn-cancelar").addEventListener("click", () => estado.xhr?.abort());
   registrarVista("resultado-ia", renderResultado);
 }

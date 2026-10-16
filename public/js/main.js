@@ -33,8 +33,8 @@ function actualizarRed() {
 async function estadoServidor() {
   try {
     const r = await fetch(`${API_BASE}/api/estado`, { cache: "no-store" }).then((x) => x.json());
-    return { requiereToken: Boolean(r.requiereToken), demo: Boolean(r.demo) };
-  } catch { return { requiereToken: false, demo: false }; }
+    return { disponible: Boolean(r.ok), requiereToken: Boolean(r.requiereToken), demo: Boolean(r.demo) };
+  } catch { return { disponible: false, requiereToken: false, demo: false }; }
 }
 
 async function iniciar() {
@@ -47,7 +47,7 @@ async function iniciar() {
 
   const srv = await estadoServidor();
   fotos.montar();
-  ia.montar({ requiereToken: srv.requiereToken });
+  ia.montar({ requiereToken: srv.requiereToken, disponible: srv.disponible });
   if (srv.demo) { const p = $("#estado-red"); p.textContent = "Modo demo"; }
   else actualizarRed();
   window.addEventListener("online", actualizarRed);
