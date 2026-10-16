@@ -1,5 +1,7 @@
 # Micelio: guía e identificador de setas
 
+**App publicada:** https://gsdgjconde-code.github.io/micelio/ (ábrela en el móvil y añádela a la pantalla de inicio: después funciona sin conexión). Código: https://github.com/gsdgjconde-code/micelio
+
 App web para el móvil (PWA) pensada para salir a por setas **sin cobertura**. Reconoce las fotos en el propio móvil con un modelo de reconocimiento de imágenes guardado en el dispositivo, lleva dentro una guía de 88 especies ibéricas y una clave de identificación por rasgos, y, si hay red, permite pedir una segunda opinión a la visión de Claude.
 
 > **Importante.** Ni una foto ni una clave permiten garantizar que una seta es comestible. La app orienta y te obliga a comprobar los rasgos en el campo; la decisión final debe pasar por una persona experta o una asociación micológica. El verde significa "probablemente comestible, confírmalo", nunca "cómetela".
@@ -55,7 +57,7 @@ Dos opciones:
 - **Túnel** (lo más rápido): `cloudflared tunnel --url http://localhost:3000` te da una dirección `https://…trycloudflare.com` que abres en el móvil. Instala la app desde ahí; una vez instalada funciona sin red.
 - **Certificado propio** (ya generado en `certs/` para la IP del Mac): arranca con `PORT=3443 TLS_KEY=certs/clave.pem TLS_CERT=certs/certificado.pem npm start` y abre `https://IP-del-mac:3443` en el móvil. El navegador avisará de que el certificado no es de confianza: acepta y entra. Con eso el GPS funciona; la instalación como app y el uso sin red necesitan un certificado de confianza (túnel u hosting). Si cambia la IP del Mac, regenera el certificado:
   `openssl req -x509 -newkey rsa:2048 -nodes -keyout certs/clave.pem -out certs/certificado.pem -days 365 -subj "/CN=Micelio local" -addext "subjectAltName=IP:TU.IP,DNS:localhost"`
-- **Publicar la app como sitio estático** (la opción definitiva): `npm run dist` deja en `dist/` todo lo que necesita el móvil (interfaz, guía, clave, mapa y modelo). Súbelo a GitHub Pages, Netlify o Cloudflare Pages: HTTPS de confianza gratis, instalación en la pantalla de inicio y funcionamiento sin red. Solo la segunda opinión con Claude necesita el servidor Node; si lo publicas en otro dominio, pon su dirección en `dist/config.js` (`apiBase`) y arráncalo con `ORIGENES_PERMITIDOS=https://tu-sitio` para autorizar el acceso.
+- **Publicar la app como sitio estático** (lo que está hecho): `npm run publicar` genera `dist/` y lo sube a la rama `gh-pages`; GitHub Pages lo sirve en https://gsdgjconde-code.github.io/micelio/ con HTTPS de confianza, instalación en la pantalla de inicio y funcionamiento sin red. Cada vez que cambie algo (un modelo nuevo, una ficha), vuelve a ejecutar `npm run publicar`. Solo la segunda opinión con Claude necesita el servidor Node; si lo publicas en otro dominio, pon su dirección en `dist/config.js` (`apiBase`) y arráncalo con `ORIGENES_PERMITIDOS=https://tu-sitio` para autorizar el acceso.
 
 ### En el campo
 

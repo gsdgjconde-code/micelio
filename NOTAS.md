@@ -6,6 +6,10 @@
 - Descarga ampliada terminada (34.600 fotos, con sinónimos para las especies escasas). Entrenamiento **v3** lanzado el 16/10 por la tarde (`entrenar/registro-entrenamiento-v3.log`; si abortó con la GPU, `-v3-cpu.log`).
 - HTTPS local listo: `certs/` con certificado para la IP del Mac; `npm run dist` genera `dist/` para publicar la app en un hosting estático (GitHub Pages, Netlify…).
 
+## Publicación
+- Repositorio: https://github.com/gsdgjconde-code/micelio (público). App: https://gsdgjconde-code.github.io/micelio/
+- Para actualizar lo publicado: `npm run publicar` (sube `dist/` a `gh-pages`).
+
 ## Para continuar mañana
 ```bash
 cd "/Volumes/DISCO SARA/app setas/micelio"
