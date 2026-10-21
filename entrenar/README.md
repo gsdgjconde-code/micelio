@@ -51,6 +51,7 @@ La métrica que más importa está en `meta.json`: `riesgo_peligrosa_como_comest
 | v1 | 17.681 (≈200/especie) | 12 | 60 % | 81 % | 15 % |
 | v2 | 17.681 | 30, 80 capas ajustables | 63,5 % | 82 % | 18 % |
 | v3 | 35.000 (≈400/especie, sinónimos) | 30 (CPU) | 74,4 % | 88,7 % | 11,9 % |
+| v4 (parcial, época 19) | 50.677 (≈575/especie) | 19 de 30 (CPU) | 75,0 % | 90,3 % | 11,7 % |
 
 Las confusiones peligrosas del v3 son las esperables y son justo las que la verificación en mano detecta: clitocibe blanco tomado por molinera o perretxiko (látex no, pero olor a harina y láminas rosas), paxilo y lactario zonado tomados por níscalo (látex blanco frente a naranja), champiñón amarilleante por bola de nieve (amarillea y huele a tinta), entoloma por pardilla (láminas rosas).
 
