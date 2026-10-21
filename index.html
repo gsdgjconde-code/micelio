@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Micelio</title>
+  <meta name="description" content="Micelio: guía de setas e identificador de campo: clave sin conexión, fichas de especies e identificación por fotos">
+  <meta name="theme-color" content="#2f5d3a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <img src="icons/icon-192.png" alt="" width="36" height="36">
+    <div class="cabecera-titulo">
+      <h1>Micelio</h1>
+      <p class="sub">Guía e identificador de campo</p>
+    </div>
+    <span id="estado-red" class="pill" aria-live="polite">…</span>
+  </header>
+
+  <main id="main">
+
+    <!-- IDENTIFICAR POR FOTOS (IA) -->
+    <section id="vista-captura" class="vista" data-tab="identificar">
+      <div id="estado-modelo" class="tarjeta estado-modelo cargando"><strong>Preparando el reconocimiento…</strong></div>
+
+      <p class="intro">Haz tres fotos: <strong>sombrero</strong>, <strong>parte de abajo</strong> y <strong>pie con la base desenterrada</strong>. El reconocimiento se hace en tu móvil, sin red.</p>
+
+      <div id="slots" class="slots"></div>
+
+      <details class="contexto">
+        <summary>Contexto (solo para la segunda opinión con IA)</summary>
+        <div class="campos">
+          <label>Hábitat
+            <select id="ctx-habitat">
+              <option value="">Sin indicar</option>
+              <option>Bosque de pinos u otras coníferas</option>
+              <option>Hayedo o robledal</option>
+              <option>Encinar o alcornocal</option>
+              <option>Castañar</option>
+              <option>Chopera o ribera</option>
+              <option>Prado o pastizal</option>
+              <option>Jardín, parque o zona urbana</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label>Árboles cercanos
+            <input id="ctx-arboles" type="text" placeholder="pino, haya, encina…" maxlength="200">
+          </label>
+          <label>Dónde crece
+            <select id="ctx-sustrato">
+              <option value="">Sin indicar</option>
+              <option>En el suelo</option>
+              <option>Sobre madera o tocón</option>
+              <option>En la base de un árbol</option>
+              <option>Sobre estiércol</option>
+              <option>En un grupo o corro</option>
+            </select>
+          </label>
+          <label>Olor
+            <input id="ctx-olor" type="text" placeholder="a harina, anís, nada especial…" maxlength="200">
+          </label>
+          <label>Zona o provincia
+            <input id="ctx-zona" type="text" placeholder="Soria, Pirineo aragonés…" maxlength="200">
+          </label>
+          <label>Notas
+            <textarea id="ctx-notas" rows="2" placeholder="Suelta leche naranja, hay muchas juntas…" maxlength="1000"></textarea>
+          </label>
+        </div>
+      </details>
+
+      <button id="btn-identificar" class="principal" disabled>Identificar en el móvil</button>
+      <p id="error-captura" class="error oculto"></p>
+      <p class="nota-pie">¿No sale bien? La <a href="#" data-ir="clave">clave de campo</a> te guía por los rasgos uno a uno.</p>
+    </section>
+
+    <section id="vista-resultado-vision" class="vista oculto" data-tab="identificar"></section>
+
+    <section id="vista-cargando" class="vista oculto" data-tab="identificar">
+      <div class="spinner"></div>
+      <h2 id="cargando-titulo">Subiendo fotos…</h2>
+      <div class="progreso"><span id="progreso-barra"></span></div>
+      <p id="cargando-sub" class="sub">Con poca cobertura puede tardar un poco.</p>
+      <p id="consejo" class="consejo"></p>
+      <button id="btn-cancelar" class="secundario">Cancelar</button>
+    </section>
+
+    <section id="vista-resultado-ia" class="vista oculto" data-tab="identificar"></section>
+
+    <!-- CLAVE DE CAMPO -->
+    <section id="vista-clave" class="vista oculto" data-tab="clave"></section>
+
+    <!-- GUÍA -->
+    <section id="vista-guia" class="vista oculto" data-tab="guia"></section>
+    <section id="vista-ficha" class="vista oculto" data-tab="guia"></section>
+
+    <!-- MAPA -->
+    <section id="vista-mapa" class="vista oculto" data-tab="mapa"></section>
+
+    <!-- HISTORIAL -->
+    <section id="vista-historial" class="vista oculto" data-tab="historial"></section>
+  </main>
+
+  <nav class="tabs" aria-label="Secciones">
+    <button data-tab="identificar" data-vista="captura"><span class="icono" data-icono="camara"></span>Fotos</button>
+    <button data-tab="clave" data-vista="clave"><span class="icono" data-icono="clave"></span>Clave</button>
+    <button data-tab="guia" data-vista="guia"><span class="icono" data-icono="guia"></span>Guía</button>
+    <button data-tab="mapa" data-vista="mapa"><span class="icono" data-icono="mapa"></span>Mapa</button>
+    <button data-tab="historial" data-vista="historial"><span class="icono" data-icono="historial"></span>Historial</button>
+  </nav>
+
+  <div id="toast" class="toast oculto" role="status"></div>
+
+  <div id="modal-aviso" class="modal oculto" role="dialog" aria-modal="true" aria-labelledby="titulo-aviso">
+    <div class="modal-caja">
+      <h2 id="titulo-aviso">Antes de empezar</h2>
+      <p>Esta app <strong>orienta</strong>, no decide por ti. Ninguna foto ni clave permite confirmar al 100 % que una seta es comestible.</p>
+      <ul>
+        <li>Varias setas mortales se parecen a especies comestibles.</li>
+        <li>No comas nada solo porque la app lo ponga en verde. Confírmalo con una persona experta o una asociación micológica.</li>
+        <li>Si has comido una seta y tienes dudas: 112 o Toxicología 91 562 04 20.</li>
+      </ul>
+      <label class="check"><input type="checkbox" id="acepto"> Entiendo que la responsabilidad final es mía.</label>
+      <button id="btn-aceptar" class="principal" disabled>Empezar</button>
+    </div>
+  </div>
+
+  <input type="file" id="input-foto" accept="image/*" capture="environment" hidden>
+
+  <script src="config.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
