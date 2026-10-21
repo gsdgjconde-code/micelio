@@ -78,6 +78,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--epocas", type=int, default=30, help="épocas totales (cabeza + ajuste fino); para antes si deja de mejorar")
     ap.add_argument("--descongelar", type=int, default=80, help="capas finales de la base que se ajustan (más = mejor acierto, más lento)")
+    ap.add_argument("--val-lotes", type=int, default=40, help="lotes de validación usados DURANTE el entrenamiento (el plugin Metal aborta con validaciones grandes); la evaluación final usa todo")
     ap.add_argument("--tamano", type=int, default=224)
     ap.add_argument("--lote", type=int, default=32)
     ap.add_argument("--arquitectura", choices=["mobilenetv2", "mobilenetv3"], default="mobilenetv2")
@@ -95,6 +96,10 @@ def main():
     etiquetas = list(ds_train.class_names)
     n_train = len(ds_train.file_paths)
     n_val = len(ds_val.file_paths)
+    # Guarda la partición para poder evaluar después exactamente sobre las mismas fotos
+    division = pathlib.Path(__file__).resolve().parent / f"division-{datetime.datetime.now().strftime('%Y%m%d-%H%M')}.json"
+    division.write_text(json.dumps({"etiquetas": etiquetas, "validacion": [str(pathlib.Path(f).relative_to(IMAGENES)) for f in ds_val.file_paths]}))
+    print(f"Partición guardada en {division.name} ({n_train} entrenamiento / {n_val} validación)")
 
     aumento = keras.Sequential([
         keras.layers.RandomFlip("horizontal"),
@@ -107,6 +112,7 @@ def main():
     autotune = tf.data.AUTOTUNE
     ds_train = ds_train.map(lambda x, y: (aumento(x, training=True), y), num_parallel_calls=autotune).prefetch(autotune)
     ds_val = ds_val.prefetch(autotune)
+    ds_val_entreno = ds_val.take(args.val_lotes) if args.val_lotes > 0 else ds_val
 
     modelo, base = construir(args.arquitectura, len(etiquetas), args.tamano)
     top3 = keras.metrics.TopKCategoricalAccuracy(k=3, name="top3")
@@ -123,23 +129,26 @@ def main():
     modelo.compile(optimizer=Adam(learning_rate=1e-3), loss=perdida, metrics=["accuracy", top3])
     epocas_cabeza = max(3, min(5, args.epocas // 4))
     try:
-        modelo.fit(ds_train, validation_data=ds_val, epochs=epocas_cabeza, callbacks=callbacks, verbose=2)
+        modelo.fit(ds_train, validation_data=ds_val_entreno, epochs=epocas_cabeza, callbacks=callbacks, verbose=2)
         # Fase 2: ajuste fino de las últimas capas
         base.trainable = True
         for capa in base.layers[:-args.descongelar]:
             capa.trainable = False
         modelo.compile(optimizer=Adam(learning_rate=2e-4), loss=perdida, metrics=["accuracy", top3])
-        modelo.fit(ds_train, validation_data=ds_val, epochs=args.epocas, initial_epoch=epocas_cabeza, callbacks=callbacks, verbose=2)
+        modelo.fit(ds_train, validation_data=ds_val_entreno, epochs=args.epocas, initial_epoch=epocas_cabeza, callbacks=callbacks, verbose=2)
     except KeyboardInterrupt:
         print("\nInterrumpido: se exporta el mejor modelo hasta ahora.")
         if mejor.exists():
             modelo = keras.models.load_model(str(mejor))
 
-    # Evaluación: acierto y, sobre todo, cuántas setas peligrosas se confunden con comestibles
-    perdida, top1, top3v = modelo.evaluate(ds_val, verbose=0)
+    # Evaluación completa en CPU (el plugin Metal falla con conjuntos grandes):
+    # acierto y, sobre todo, cuántas setas peligrosas se confunden con comestibles
+    with tf.device("/CPU:0"):
+        perdida, top1, top3v = modelo.evaluate(ds_val, verbose=0)
     peligrosas_como_comestibles, peligrosas_total = 0, 0
     for x, y in ds_val:
-        pred = np.argmax(modelo.predict(x, verbose=0), axis=1)
+        with tf.device("/CPU:0"):
+            pred = np.argmax(modelo.predict(x, verbose=0), axis=1)
         real = np.argmax(y.numpy(), axis=1)
         for p, r in zip(pred, real):
             if COMESTIBILIDAD.get(etiquetas[r]) in ("toxica", "mortal"):

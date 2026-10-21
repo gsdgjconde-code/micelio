@@ -1,8 +1,8 @@
-# Dónde lo dejamos (16/10/2026, noche)
+# Dónde lo dejamos (21/10/2026)
 
 ## Estado
 - App completa en esta carpeta: fotos con reconocimiento en el móvil, clave de campo, guía de 88 especies, mapa (ruta, setales, volver al inicio, GPX, mapa sin red), historial. 23 tests en verde (`npm test`).
-- Modelo de reconocimiento **v3** publicado (mejor punto, época 24: 74 % especie exacta, 88 % entre las tres primeras; entrenado con 35.000 fotos en CPU porque la GPU abortaba con este tamaño). La cifra de "peligrosas tomadas por comestibles" del v3 no se calculó: la da `entrenar.py` al acabar; si terminó, está al final de `entrenar/registro-entrenamiento-v3-cpu.log`.
+- Modelo de reconocimiento **v3** publicado (mejor punto, época 24: 74 % especie exacta, 88 % entre las tres primeras; entrenado con 35.000 fotos en CPU porque la GPU abortaba con este tamaño). Evaluado el 21/10 con `evaluar.py`: 74,4 % / 88,7 % / peligrosas tomadas por comestibles 11,9 % (detalle en `entrenar/evaluacion.json`).
 - Si el entrenamiento v3 llegó al final y mejoró el 74 %, habrá sobrescrito `public/modelo` con uno mejor: ejecutar `npm run publicar` para subirlo. Si no, no hay nada que hacer.
 - HTTPS local listo: `certs/` con certificado para la IP del Mac; `npm run dist` genera `dist/` para publicar la app en un hosting estático (GitHub Pages, Netlify…).
 
