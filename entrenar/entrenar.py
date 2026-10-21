@@ -78,6 +78,9 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--epocas", type=int, default=30, help="épocas totales (cabeza + ajuste fino); para antes si deja de mejorar")
     ap.add_argument("--descongelar", type=int, default=80, help="capas finales de la base que se ajustan (más = mejor acierto, más lento)")
+    ap.add_argument("--continuar", default=None, help="ruta a un modelo .keras guardado por un entrenamiento anterior para seguir ajustándolo (salta la fase de cabeza)")
+    ap.add_argument("--epoca-inicial", type=int, default=0, help="con --continuar: época por la que se quedó (solo para numerar)")
+    ap.add_argument("--pesos-clase", action="store_true", help="da más peso a las especies con pocas fotos (útil para las peligrosas escasas)")
     ap.add_argument("--val-lotes", type=int, default=40, help="lotes de validación usados DURANTE el entrenamiento (el plugin Metal aborta con validaciones grandes); la evaluación final usa todo")
     ap.add_argument("--tamano", type=int, default=224)
     ap.add_argument("--lote", type=int, default=32)
@@ -114,7 +117,20 @@ def main():
     ds_val = ds_val.prefetch(autotune)
     ds_val_entreno = ds_val.take(args.val_lotes) if args.val_lotes > 0 else ds_val
 
-    modelo, base = construir(args.arquitectura, len(etiquetas), args.tamano)
+    pesos_clase = None
+    if args.pesos_clase:
+        import collections
+        conteo = {e: len([f for f in os.listdir(IMAGENES / e) if f.lower().endswith(".jpg") and not f.startswith("._")]) for e in etiquetas}
+        mediana = float(np.median(list(conteo.values())))
+        pesos_clase = {i: float(np.clip(mediana / max(1, conteo[e]), 0.5, 3.0)) for i, e in enumerate(etiquetas)}
+        print("Pesos por clase (mín/máx):", round(min(pesos_clase.values()), 2), round(max(pesos_clase.values()), 2))
+
+    if args.continuar:
+        modelo = keras.models.load_model(args.continuar, compile=False)
+        base = next(c for c in modelo.layers if isinstance(c, keras.Model))
+        print(f"Continuando desde {args.continuar} (época {args.epoca_inicial})")
+    else:
+        modelo, base = construir(args.arquitectura, len(etiquetas), args.tamano)
     top3 = keras.metrics.TopKCategoricalAccuracy(k=3, name="top3")
     mejor = SALIDA.parent / "modelo_mejor.keras"
     callbacks = [
@@ -124,18 +140,20 @@ def main():
     ]
     perdida = keras.losses.CategoricalCrossentropy(label_smoothing=0.1)
 
-    # Fase 1: solo la cabeza
-    base.trainable = False
-    modelo.compile(optimizer=Adam(learning_rate=1e-3), loss=perdida, metrics=["accuracy", top3])
     epocas_cabeza = max(3, min(5, args.epocas // 4))
     try:
-        modelo.fit(ds_train, validation_data=ds_val_entreno, epochs=epocas_cabeza, callbacks=callbacks, verbose=2)
+        if not args.continuar:
+            # Fase 1: solo la cabeza
+            base.trainable = False
+            modelo.compile(optimizer=Adam(learning_rate=1e-3), loss=perdida, metrics=["accuracy", top3])
+            modelo.fit(ds_train, validation_data=ds_val_entreno, epochs=epocas_cabeza, callbacks=callbacks, verbose=2, class_weight=pesos_clase)
         # Fase 2: ajuste fino de las últimas capas
         base.trainable = True
         for capa in base.layers[:-args.descongelar]:
             capa.trainable = False
-        modelo.compile(optimizer=Adam(learning_rate=2e-4), loss=perdida, metrics=["accuracy", top3])
-        modelo.fit(ds_train, validation_data=ds_val_entreno, epochs=args.epocas, initial_epoch=epocas_cabeza, callbacks=callbacks, verbose=2)
+        lr = 1e-4 if args.continuar else 2e-4
+        modelo.compile(optimizer=Adam(learning_rate=lr), loss=perdida, metrics=["accuracy", top3])
+        modelo.fit(ds_train, validation_data=ds_val_entreno, epochs=args.epocas, initial_epoch=args.epoca_inicial if args.continuar else epocas_cabeza, callbacks=callbacks, verbose=2, class_weight=pesos_clase)
     except KeyboardInterrupt:
         print("\nInterrumpido: se exporta el mejor modelo hasta ahora.")
         if mejor.exists():

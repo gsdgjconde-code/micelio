@@ -1,9 +1,17 @@
-# Dónde lo dejamos (21/10/2026)
+# Dónde lo dejamos (21/10/2026, noche)
 
 ## Estado
 - App completa en esta carpeta: fotos con reconocimiento en el móvil, clave de campo, guía de 88 especies, mapa (ruta, setales, volver al inicio, GPX, mapa sin red), historial. 23 tests en verde (`npm test`).
 - Modelo de reconocimiento **v3** publicado (mejor punto, época 24: 74 % especie exacta, 88 % entre las tres primeras; entrenado con 35.000 fotos en CPU porque la GPU abortaba con este tamaño). Evaluado el 21/10 con `evaluar.py`: 74,4 % / 88,7 % / peligrosas tomadas por comestibles 11,9 % (detalle en `entrenar/evaluacion.json`).
-- Si el entrenamiento v3 llegó al final y mejoró el 74 %, habrá sobrescrito `public/modelo` con uno mejor: ejecutar `npm run publicar` para subirlo. Si no, no hay nada que hacer.
+- **v4 a medias** (50.677 fotos, 575 por especie; en CPU porque la GPU se cae por encima de ~35.000 fotos). Se apagó el Mac antes de acabar; el mejor punto está en `public/modelo_mejor.keras` y la partición en `entrenar/division-20261021-1654.json`. Para continuarlo (fase de ajuste fino, desde la época en que se quedó, ver `entrenar/registro-entrenamiento-v4-cpu.log`):
+  ```bash
+  source ~/.micelio/venv/bin/activate
+  cp public/modelo_mejor.keras entrenar/v4-parcial.keras
+  SIN_GPU=1 nice -n 15 python entrenar/entrenar.py --continuar entrenar/v4-parcial.keras --epoca-inicial 22 --epocas 30 --val-lotes 40
+  python entrenar/evaluar.py --modelo public/modelo_mejor.keras --division entrenar/division-20261021-1654.json
+  npm run publicar   # solo si evaluar.py da más del 74,4 % del v3
+  ```
+  Ojo: `--continuar` recompila el modelo y la partición de validación se vuelve a calcular con la misma semilla sobre los mismos archivos (no añadir fotos antes de continuar).
 - HTTPS local listo: `certs/` con certificado para la IP del Mac; `npm run dist` genera `dist/` para publicar la app en un hosting estático (GitHub Pages, Netlify…).
 
 ## Publicación
