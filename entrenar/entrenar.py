@@ -190,7 +190,10 @@ def main():
     exportar(modelo, destino, etiquetas, args, top1, top3v, n_train, n_val, riesgo)
 
 
-def exportar(modelo, destino, etiquetas, args, top1, top3v, n_train, n_val, riesgo):
+def exportar_tfjs(modelo, destino, formato):
+    """Exporta a TensorFlow.js. "layers" solo vale para arquitecturas con capas Keras puras
+    (MobileNetV2); "graph" (SavedModel -> grafo) admite cualquiera (MobileNetV3, EfficientNet)."""
+    import shutil, tempfile
     import tensorflowjs as tfjs
     destino.mkdir(parents=True, exist_ok=True)
     for viejo in list(destino.glob("*")):
@@ -198,10 +201,27 @@ def exportar(modelo, destino, etiquetas, args, top1, top3v, n_train, n_val, ries
             viejo.unlink()
         except FileNotFoundError:
             pass  # en ExFAT el ._archivo desaparece con el archivo
-    tfjs.converters.save_keras_model(modelo, str(destino), quantization_dtype_map={"uint8": "*"})
+    if formato == "layers":
+        tfjs.converters.save_keras_model(modelo, str(destino), quantization_dtype_map={"uint8": "*"})
+        return
+    tmp = tempfile.mkdtemp(prefix="micelio-saved-")
+    try:
+        tf.saved_model.save(modelo, tmp)
+        tfjs.converters.convert_tf_saved_model(tmp, str(destino), quantization_dtype_map={"uint8": "*"})
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def formato_para(arquitectura):
+    return "layers" if arquitectura == "mobilenetv2" else "graph"
+
+
+def exportar(modelo, destino, etiquetas, args, top1, top3v, n_train, n_val, riesgo):
+    formato = formato_para(args.arquitectura)
+    exportar_tfjs(modelo, destino, formato)
     meta = {
         "version": datetime.datetime.now().strftime("%Y%m%d-%H%M"),
-        "formato": "layers",
+        "formato": formato,
         "arquitectura": args.arquitectura,
         "entrada": {"tamano": args.tamano, "rango": "0-255"},
         "etiquetas": etiquetas,

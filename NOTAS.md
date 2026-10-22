@@ -1,4 +1,4 @@
-# Dónde lo dejamos (21/10/2026, noche)
+# Dónde lo dejamos (22/10/2026)
 
 ## Estado
 - App completa en esta carpeta: fotos con reconocimiento en el móvil, clave de campo, guía de 88 especies, mapa (ruta, setales, volver al inicio, GPX, mapa sin red), historial. 23 tests en verde (`npm test`).
@@ -17,6 +17,9 @@
 ## Publicación
 - Repositorio: https://github.com/gsdgjconde-code/micelio (público). App: https://gsdgjconde-code.github.io/micelio/
 - Para actualizar lo publicado: `npm run publicar` (sube `dist/` a `gh-pages`).
+
+## Siguiente paso: entrenamiento grande en el PC de sobremesa (RTX 3060 12 GB)
+Guía completa en `entrenar/README-PC.md` (WSL2 + TensorFlow con GPU + comando recomendado: MobileNetV3 a 288 px, 40 épocas, pesos por clase). Las fotos (50.677, 3 GB) van en el disco externo; el PC puede copiarlas o volver a descargarlas. El v4 del Mac (75,0 % / 90,3 % / 11,7 %) es la marca a batir.
 
 ## Para continuar mañana
 ```bash

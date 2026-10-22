@@ -44,14 +44,17 @@ Si prefieres no copiar, puedes volver a descargarlas: `python entrenar/descargar
 
 ```bash
 cd ~/proyectos/micelio && source ~/.micelio/venv/bin/activate
-python entrenar/entrenar.py --epocas 40 --arquitectura mobilenetv3 --val-lotes 0 --pesos-clase
+python entrenar/entrenar.py --epocas 40 --arquitectura mobilenetv3 --tamano 288 --descongelar 120 --val-lotes 0 --pesos-clase
 python entrenar/evaluar.py --division entrenar/division-FECHA.json   # la fecha que imprime el entrenamiento
 npm install && npm run publicar    # solo si evaluar.py mejora al modelo publicado (hoy: 75,0 % / 90,3 % / 11,7 %)
 ```
 `--val-lotes 0` usa toda la validación durante el entrenamiento (en la RTX no hace falta limitarla; en el Mac se limitaba por un fallo del plugin Metal). `npm run publicar` necesita `gh auth login` hecho en ese Ubuntu la primera vez.
 
-## Qué probar con 12 GB de VRAM
+## El entrenamiento "tocho" recomendado (verificado el 22/10: la app carga este modelo)
 
-- `--arquitectura mobilenetv3` a 224 px (la conversión a TensorFlow.js está pendiente de verificar: si la app no carga el modelo, volver a `mobilenetv2`).
-- Más resolución: `--tamano 288` (más detalle en láminas y poros; el modelo en el móvil será algo más lento).
-- Más fotos: `--por-especie 800` en la descarga.
+```bash
+python entrenar/entrenar.py --epocas 40 --arquitectura mobilenetv3 --tamano 288 --descongelar 120 --val-lotes 0 --pesos-clase
+```
+MobileNetV3 a 288 px se exporta como "graph model" (lo hace solo `entrenar.py`); en el navegador tarda unos 80 ms por foto y la carga inicial unos segundos la primera vez. Antes de entrenar cualquier otra arquitectura, comprueba que se convierte: `python entrenar/comprobar_conversion.py --arquitectura X --tamano N` y carga `http://localhost:3000/pruebas/modelo-X-N/model.json` con `tf.loadGraphModel` en la consola del navegador.
+
+Después: `python entrenar/evaluar.py --division entrenar/division-FECHA.json` y, si mejora (hoy: 75,0 % / 90,3 % / 11,7 %), `npm run publicar`. Más fotos: `--por-especie 800` en la descarga.

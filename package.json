@@ -14,7 +14,7 @@
     "test": "node scripts/construir-datos.mjs && node --test test/*.test.mjs",
     "prestart": "node scripts/construir-datos.mjs && npm run -s vendor",
     "dist": "node scripts/empaquetar.mjs",
-    "publicar": "zsh scripts/publicar.sh"
+    "publicar": "bash scripts/publicar.sh"
   },
   "engines": {
     "node": ">=20"

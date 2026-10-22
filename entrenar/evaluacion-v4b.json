@@ -1,0 +1,483 @@
+{
+  "modelo": "public/modelo_mejor.keras",
+  "n_validacion": 7601,
+  "top1": 0.7495,
+  "top3": 0.8983,
+  "riesgo_peligrosa_como_comestible": 0.1143,
+  "peligrosas_total": 2300,
+  "peligrosas_como_comestibles": 263,
+  "peligrosas_por_especie": {
+    "agaricus-xanthodermus": {
+      "fotos": 90,
+      "como_comestible": 23,
+      "confundida_con": {
+        "agaricus-campestris": 5,
+        "agaricus-arvensis": 10,
+        "pleurotus-eryngii": 1,
+        "infundibulicybe-geotropa": 1,
+        "lycoperdon-perlatum": 3,
+        "amanita-vaginata": 1,
+        "calocybe-gambosa": 1,
+        "chlorophyllum-rhacodes": 1
+      }
+    },
+    "clitocybe-rivulosa": {
+      "fotos": 86,
+      "como_comestible": 22,
+      "confundida_con": {
+        "boletus-edulis": 1,
+        "clitopilus-prunulus": 6,
+        "marasmius-oreades": 2,
+        "volvopluteus-gloiocephalus": 1,
+        "infundibulicybe-geotropa": 2,
+        "pleurotus-eryngii": 1,
+        "calocybe-gambosa": 4,
+        "lepista-nuda": 1,
+        "xerocomellus-chrysenteron": 1,
+        "hygrophorus-marzuolus": 1,
+        "agrocybe-aegerita": 1,
+        "clitocybe-nebularis": 1
+      }
+    },
+    "galerina-marginata": {
+      "fotos": 91,
+      "como_comestible": 20,
+      "confundida_con": {
+        "suillus-luteus": 1,
+        "flammulina-velutipes": 9,
+        "auricularia-auricula-judae": 3,
+        "fistulina-hepatica": 1,
+        "kuehneromyces-mutabilis": 2,
+        "craterellus-tubaeformis": 1,
+        "armillaria-mellea": 1,
+        "amanita-caesarea": 1,
+        "cantharellus-cibarius": 1
+      }
+    },
+    "paxillus-involutus": {
+      "fotos": 90,
+      "como_comestible": 19,
+      "confundida_con": {
+        "kuehneromyces-mutabilis": 1,
+        "boletus-reticulatus": 3,
+        "auricularia-auricula-judae": 2,
+        "lactarius-sanguifluus": 1,
+        "pleurotus-ostreatus": 1,
+        "pleurotus-eryngii": 1,
+        "suillus-luteus": 3,
+        "xerocomellus-chrysenteron": 1,
+        "lactarius-deliciosus": 2,
+        "imleria-badia": 1,
+        "fistulina-hepatica": 1,
+        "armillaria-mellea": 2
+      }
+    },
+    "entoloma-sinuatum": {
+      "fotos": 89,
+      "como_comestible": 15,
+      "confundida_con": {
+        "amanita-vaginata": 1,
+        "boletus-reticulatus": 3,
+        "lepista-nuda": 1,
+        "agaricus-arvensis": 1,
+        "leccinum-scabrum": 1,
+        "volvopluteus-gloiocephalus": 1,
+        "boletus-edulis": 1,
+        "clitocybe-nebularis": 4,
+        "russula-virescens": 1,
+        "amanita-caesarea": 1
+      }
+    },
+    "hypholoma-fasciculare": {
+      "fotos": 99,
+      "como_comestible": 13,
+      "confundida_con": {
+        "flammulina-velutipes": 5,
+        "suillus-granulatus": 1,
+        "armillaria-mellea": 2,
+        "kuehneromyces-mutabilis": 1,
+        "suillellus-luridus": 1,
+        "agrocybe-aegerita": 1,
+        "marasmius-oreades": 2
+      }
+    },
+    "coprinopsis-atramentaria": {
+      "fotos": 100,
+      "como_comestible": 13,
+      "confundida_con": {
+        "lycoperdon-perlatum": 2,
+        "agaricus-campestris": 3,
+        "agaricus-arvensis": 1,
+        "hygrophorus-marzuolus": 1,
+        "leccinum-scabrum": 1,
+        "coprinus-comatus": 1,
+        "amanita-vaginata": 1,
+        "tricholoma-terreum": 2,
+        "marasmius-oreades": 1
+      }
+    },
+    "lactarius-chrysorrheus": {
+      "fotos": 94,
+      "como_comestible": 12,
+      "confundida_con": {
+        "auricularia-auricula-judae": 1,
+        "lactarius-sanguifluus": 1,
+        "lactarius-deliciosus": 2,
+        "flammulina-velutipes": 1,
+        "hygrophorus-marzuolus": 1,
+        "russula-vesca": 1,
+        "suillus-granulatus": 1,
+        "calocybe-gambosa": 1,
+        "agrocybe-aegerita": 1,
+        "clitopilus-prunulus": 1,
+        "volvopluteus-gloiocephalus": 1
+      }
+    },
+    "inocybe-erubescens": {
+      "fotos": 70,
+      "como_comestible": 12,
+      "confundida_con": {
+        "marasmius-oreades": 1,
+        "flammulina-velutipes": 1,
+        "calocybe-gambosa": 2,
+        "leccinum-scabrum": 1,
+        "amanita-vaginata": 1,
+        "volvopluteus-gloiocephalus": 1,
+        "amanita-rubescens": 2,
+        "tricholoma-terreum": 1,
+        "kuehneromyces-mutabilis": 1,
+        "lepista-nuda": 1
+      }
+    },
+    "lactarius-torminosus": {
+      "fotos": 88,
+      "como_comestible": 11,
+      "confundida_con": {
+        "russula-vesca": 1,
+        "macrolepiota-procera": 2,
+        "imleria-badia": 1,
+        "amanita-rubescens": 1,
+        "pleurotus-eryngii": 1,
+        "suillus-granulatus": 1,
+        "clitopilus-prunulus": 1,
+        "marasmius-oreades": 1,
+        "lepista-nuda": 1,
+        "agaricus-campestris": 1
+      }
+    },
+    "tricholoma-equestre": {
+      "fotos": 107,
+      "como_comestible": 10,
+      "confundida_con": {
+        "tricholoma-portentosum": 7,
+        "armillaria-mellea": 1,
+        "russula-vesca": 1,
+        "russula-virescens": 1
+      }
+    },
+    "rubroboletus-satanas": {
+      "fotos": 86,
+      "como_comestible": 10,
+      "confundida_con": {
+        "boletus-aereus": 1,
+        "suillellus-luridus": 3,
+        "russula-virescens": 2,
+        "neoboletus-erythropus": 3,
+        "boletus-reticulatus": 1
+      }
+    },
+    "amanita-phalloides": {
+      "fotos": 95,
+      "como_comestible": 10,
+      "confundida_con": {
+        "suillus-granulatus": 1,
+        "volvopluteus-gloiocephalus": 1,
+        "russula-cyanoxantha": 2,
+        "amanita-rubescens": 1,
+        "calocybe-gambosa": 1,
+        "hydnum-repandum": 1,
+        "agaricus-arvensis": 1,
+        "russula-virescens": 1,
+        "amanita-vaginata": 1
+      }
+    },
+    "omphalotus-olearius": {
+      "fotos": 92,
+      "como_comestible": 8,
+      "confundida_con": {
+        "armillaria-mellea": 3,
+        "flammulina-velutipes": 1,
+        "auricularia-auricula-judae": 1,
+        "fistulina-hepatica": 1,
+        "pleurotus-eryngii": 1,
+        "pleurotus-ostreatus": 1
+      }
+    },
+    "lepiota-cristata": {
+      "fotos": 94,
+      "como_comestible": 6,
+      "confundida_con": {
+        "leccinum-scabrum": 1,
+        "amanita-vaginata": 1,
+        "russula-cyanoxantha": 1,
+        "clitopilus-prunulus": 1,
+        "coprinus-comatus": 1,
+        "marasmius-oreades": 1
+      }
+    },
+    "cortinarius-orellanus": {
+      "fotos": 94,
+      "como_comestible": 6,
+      "confundida_con": {
+        "armillaria-mellea": 2,
+        "imleria-badia": 1,
+        "marasmius-oreades": 1,
+        "russula-cyanoxantha": 1,
+        "amanita-vaginata": 1
+      }
+    },
+    "amanita-gemmata": {
+      "fotos": 95,
+      "como_comestible": 6,
+      "confundida_con": {
+        "agaricus-arvensis": 2,
+        "clitopilus-prunulus": 2,
+        "amanita-caesarea": 1,
+        "amanita-vaginata": 1
+      }
+    },
+    "russula-emetica": {
+      "fotos": 81,
+      "como_comestible": 6,
+      "confundida_con": {
+        "fistulina-hepatica": 1,
+        "amanita-vaginata": 2,
+        "russula-vesca": 2,
+        "clitopilus-prunulus": 1
+      }
+    },
+    "lepiota-brunneoincarnata": {
+      "fotos": 25,
+      "como_comestible": 6,
+      "confundida_con": {
+        "chlorophyllum-rhacodes": 1,
+        "xerocomellus-chrysenteron": 1,
+        "macrolepiota-procera": 1,
+        "amanita-rubescens": 3
+      }
+    },
+    "amanita-pantherina": {
+      "fotos": 112,
+      "como_comestible": 5,
+      "confundida_con": {
+        "amanita-rubescens": 3,
+        "lepista-nuda": 1,
+        "tricholoma-terreum": 1
+      }
+    },
+    "lactarius-zonarius": {
+      "fotos": 73,
+      "como_comestible": 5,
+      "confundida_con": {
+        "lactarius-deliciosus": 1,
+        "infundibulicybe-geotropa": 1,
+        "lactarius-sanguifluus": 1,
+        "agaricus-campestris": 1,
+        "russula-vesca": 1
+      }
+    },
+    "gyromitra-esculenta": {
+      "fotos": 87,
+      "como_comestible": 5,
+      "confundida_con": {
+        "auricularia-auricula-judae": 4,
+        "craterellus-cornucopioides": 1
+      }
+    },
+    "amanita-muscaria": {
+      "fotos": 92,
+      "como_comestible": 5,
+      "confundida_con": {
+        "amanita-caesarea": 2,
+        "lactarius-sanguifluus": 1,
+        "fistulina-hepatica": 1,
+        "suillus-luteus": 1
+      }
+    },
+    "amanita-virosa": {
+      "fotos": 83,
+      "como_comestible": 4,
+      "confundida_con": {
+        "amanita-vaginata": 1,
+        "agaricus-arvensis": 2,
+        "infundibulicybe-geotropa": 1
+      }
+    },
+    "tricholoma-pardinum": {
+      "fotos": 37,
+      "como_comestible": 4,
+      "confundida_con": {
+        "tricholoma-terreum": 2,
+        "amanita-rubescens": 1,
+        "clitocybe-nebularis": 1
+      }
+    },
+    "scleroderma-citrinum": {
+      "fotos": 82,
+      "como_comestible": 3,
+      "confundida_con": {
+        "boletus-edulis": 1,
+        "hygrophorus-marzuolus": 1,
+        "lycoperdon-perlatum": 1
+      }
+    },
+    "amanita-proxima": {
+      "fotos": 28,
+      "como_comestible": 3,
+      "confundida_con": {
+        "amanita-vaginata": 1,
+        "agaricus-arvensis": 1,
+        "infundibulicybe-geotropa": 1
+      }
+    },
+    "amanita-verna": {
+      "fotos": 40,
+      "como_comestible": 1,
+      "confundida_con": {
+        "agaricus-arvensis": 1
+      }
+    }
+  },
+  "peores_especies": [
+    [
+      "helvella-crispa",
+      0.34210526315789475
+    ],
+    [
+      "agaricus-arvensis",
+      0.4111111111111111
+    ],
+    [
+      "amanita-proxima",
+      0.42857142857142855
+    ],
+    [
+      "lactarius-vellereus",
+      0.42857142857142855
+    ],
+    [
+      "amanita-verna",
+      0.45
+    ],
+    [
+      "boletus-reticulatus",
+      0.5
+    ],
+    [
+      "boletus-aereus",
+      0.5175438596491229
+    ],
+    [
+      "kuehneromyces-mutabilis",
+      0.5454545454545454
+    ],
+    [
+      "agrocybe-aegerita",
+      0.5697674418604651
+    ],
+    [
+      "pleurotus-eryngii",
+      0.5795454545454546
+    ]
+  ],
+  "acierto_por_especie": {
+    "agaricus-arvensis": 0.4111111111111111,
+    "agaricus-campestris": 0.6732673267326733,
+    "agaricus-xanthodermus": 0.6777777777777778,
+    "agrocybe-aegerita": 0.5697674418604651,
+    "amanita-caesarea": 0.8602150537634409,
+    "amanita-citrina": 0.8072289156626506,
+    "amanita-gemmata": 0.7789473684210526,
+    "amanita-muscaria": 0.8804347826086957,
+    "amanita-ovoidea": 0.845360824742268,
+    "amanita-pantherina": 0.8839285714285714,
+    "amanita-phalloides": 0.7473684210526316,
+    "amanita-proxima": 0.42857142857142855,
+    "amanita-rubescens": 0.6224489795918368,
+    "amanita-vaginata": 0.7162162162162162,
+    "amanita-verna": 0.45,
+    "amanita-virosa": 0.8554216867469879,
+    "armillaria-mellea": 0.7444444444444445,
+    "auricularia-auricula-judae": 0.95,
+    "boletus-aereus": 0.5175438596491229,
+    "boletus-edulis": 0.5849056603773585,
+    "boletus-pinophilus": 0.875,
+    "boletus-reticulatus": 0.5,
+    "caloboletus-calopus": 0.8229166666666666,
+    "calocybe-gambosa": 0.5882352941176471,
+    "cantharellus-cibarius": 0.7127659574468085,
+    "chlorophyllum-rhacodes": 0.8243243243243243,
+    "clitocybe-nebularis": 0.6739130434782609,
+    "clitocybe-rivulosa": 0.6744186046511628,
+    "clitopilus-prunulus": 0.6923076923076923,
+    "coprinopsis-atramentaria": 0.84,
+    "coprinus-comatus": 0.8191489361702128,
+    "cortinarius-orellanus": 0.8617021276595744,
+    "craterellus-cornucopioides": 0.9175257731958762,
+    "craterellus-tubaeformis": 0.8252427184466019,
+    "entoloma-sinuatum": 0.651685393258427,
+    "fistulina-hepatica": 0.900990099009901,
+    "flammulina-velutipes": 0.7640449438202247,
+    "galerina-marginata": 0.7582417582417582,
+    "gyromitra-esculenta": 0.9425287356321839,
+    "helvella-crispa": 0.34210526315789475,
+    "hydnum-repandum": 0.6372549019607843,
+    "hygrophoropsis-aurantiaca": 0.8045977011494253,
+    "hygrophorus-marzuolus": 0.7142857142857143,
+    "hypholoma-fasciculare": 0.797979797979798,
+    "imleria-badia": 0.7395833333333334,
+    "infundibulicybe-geotropa": 0.8041237113402062,
+    "inocybe-erubescens": 0.7142857142857143,
+    "kuehneromyces-mutabilis": 0.5454545454545454,
+    "lactarius-chrysorrheus": 0.776595744680851,
+    "lactarius-deliciosus": 0.7706422018348624,
+    "lactarius-piperatus": 0.7058823529411765,
+    "lactarius-sanguifluus": 0.7916666666666666,
+    "lactarius-torminosus": 0.7159090909090909,
+    "lactarius-vellereus": 0.42857142857142855,
+    "lactarius-zonarius": 0.7397260273972602,
+    "laetiporus-sulphureus": 0.8235294117647058,
+    "leccinum-scabrum": 0.6829268292682927,
+    "lepiota-brunneoincarnata": 0.68,
+    "lepiota-cristata": 0.851063829787234,
+    "lepista-nuda": 0.8846153846153846,
+    "lycoperdon-perlatum": 0.803921568627451,
+    "macrolepiota-procera": 0.8494623655913979,
+    "marasmius-oreades": 0.8461538461538461,
+    "morchella-esculenta": 0.8860759493670886,
+    "neoboletus-erythropus": 0.7714285714285715,
+    "omphalotus-olearius": 0.8586956521739131,
+    "paxillus-involutus": 0.6555555555555556,
+    "pleurotus-eryngii": 0.5795454545454546,
+    "pleurotus-ostreatus": 0.7326732673267327,
+    "rubroboletus-satanas": 0.7906976744186046,
+    "russula-cyanoxantha": 0.7303370786516854,
+    "russula-emetica": 0.8395061728395061,
+    "russula-vesca": 0.7872340425531915,
+    "russula-virescens": 0.8631578947368421,
+    "scleroderma-citrinum": 0.9390243902439024,
+    "sparassis-crispa": 0.9428571428571428,
+    "suillellus-luridus": 0.7115384615384616,
+    "suillus-bellinii": 0.5901639344262295,
+    "suillus-granulatus": 0.6666666666666666,
+    "suillus-luteus": 0.6941176470588235,
+    "terfezia-arenaria": 0.625,
+    "tricholoma-equestre": 0.8317757009345794,
+    "tricholoma-pardinum": 0.8108108108108109,
+    "tricholoma-portentosum": 0.7586206896551724,
+    "tricholoma-terreum": 0.8969072164948454,
+    "tylopilus-felleus": 0.711340206185567,
+    "volvopluteus-gloiocephalus": 0.7362637362637363,
+    "xerocomellus-chrysenteron": 0.7840909090909091
+  }
+}

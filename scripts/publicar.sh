@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 # Publica la carpeta dist/ en la rama gh-pages del repositorio (GitHub Pages).
 # Uso: npm run publicar   (requiere haber hecho `git remote add origin ...`)
 set -e

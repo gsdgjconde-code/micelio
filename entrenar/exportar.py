@@ -16,6 +16,7 @@ ap.add_argument("--top1", type=float, required=True)
 ap.add_argument("--top3", type=float, required=True)
 ap.add_argument("--riesgo", type=float, default=None)
 ap.add_argument("--tamano", type=int, default=224)
+ap.add_argument("--arquitectura", default="mobilenetv2", help="mobilenetv2 -> formato layers; otras -> graph")
 args = ap.parse_args()
 
 try:
@@ -29,16 +30,13 @@ modelo = keras.models.load_model(args.modelo, compile=False)
 etiquetas = sorted(d.name for d in IMAGENES.iterdir() if d.is_dir() and not d.name.startswith((".", "_")))
 assert len(etiquetas) == modelo.output_shape[-1], f"{len(etiquetas)} carpetas frente a {modelo.output_shape[-1]} salidas"
 destino = pathlib.Path(args.destino)
-destino.mkdir(parents=True, exist_ok=True)
-for viejo in list(destino.glob("*")):
-    try:
-        viejo.unlink()
-    except FileNotFoundError:
-        pass
-tfjs.converters.save_keras_model(modelo, str(destino), quantization_dtype_map={"uint8": "*"})
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from entrenar import exportar_tfjs, formato_para
+formato = formato_para(args.arquitectura)
+exportar_tfjs(modelo, destino, formato)
 meta = {
     "version": datetime.datetime.now().strftime("%Y%m%d-%H%M"),
-    "formato": "layers", "arquitectura": "mobilenetv2",
+    "formato": formato, "arquitectura": args.arquitectura,
     "entrada": {"tamano": args.tamano, "rango": "0-255"},
     "etiquetas": etiquetas,
     "metricas": {"top1": args.top1, "top3": args.top3, "riesgo_peligrosa_como_comestible": args.riesgo},
